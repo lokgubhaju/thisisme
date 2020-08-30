@@ -29,7 +29,10 @@ function App() {
           <h1>Personal information</h1>
         </section>
         <section id="contact-section" className="section">
-          <h1>Contact buttons</h1>
+          <h1>Contact links</h1>
+        </section>
+        <section id="finishing" className="section">
+          <h1>This is how your image(s) look(s):</h1>
         </section>
       </main>
     </div>
