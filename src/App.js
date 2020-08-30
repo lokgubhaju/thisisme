@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header id="header">
         <h1>thisisme</h1>
-        <p>Create cool images containing useful information about you and your work</p>
+        <p>Create cool images containing useful<br/>information about you and your work<br/>for your GitHub readme</p>
         <a href="#">Start</a>
       </header>
       <main id="main">
