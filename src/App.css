@@ -45,7 +45,6 @@
 #navigation div {
     border: 1px solid #AFAFAF;
     border-radius: .5rem;
-    padding: .25rem;
     width: 10rem;
     margin-bottom: .6rem;
 }
@@ -68,11 +67,9 @@
     list-style-type: none;
     border: 1px solid #AFAFAF;
     border-radius: .5rem;
-    padding: .25rem;
 }
 
 #navigation ul li {
-    margin-bottom: .28rem;
     width: 10rem;
 }
 #navigation ul li:nth-last-child(1) {
@@ -85,10 +82,17 @@
     color: hsl(0, 0%, 28%);
     background-color: transparent;
     padding: .4rem;
-    border-radius: .5rem;
     text-decoration: none;
 }
 #navigation ul li a:hover {
     color: hsl(0, 0%, 15%);
     background-color: hsl(0, 0%, 91%);
+}
+#navigation ul li .link-1 {
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+#navigation ul li .link-2 {
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
 }
