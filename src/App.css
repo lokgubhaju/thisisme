@@ -71,11 +71,12 @@
     border-radius: .5rem;
     width: 10rem;
     margin-bottom: .6rem;
+    background-color: #f4f4f4;
 }
 
 #navigation div a {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: hsl(0, 0%, 28%);
     background-color: transparent;
     padding: .4rem;
@@ -91,6 +92,7 @@
     list-style-type: none;
     border: 1px solid #AFAFAF;
     border-radius: .5rem;
+    background-color: #f4f4f4;
 }
 
 #navigation ul li {
@@ -99,7 +101,7 @@
 
 #navigation ul li a {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: hsl(0, 0%, 28%);
     background-color: transparent;
     padding: .4rem;
