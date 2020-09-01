@@ -25,13 +25,14 @@
     border-radius: .5rem;
     color: hsl(0, 0%, 100%);
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    margin-bottom: .6rem;
 }
 #header > a:hover {
     background-color: hsl(219, 86%, 48%);
 }
 
-#header ul {
+#header > ul {
     position: fixed;
     bottom: 0;
     margin-bottom: 2rem;
@@ -40,18 +41,18 @@
     flex-direction: row;
 }
 
-#header ul li {
+#header > ul li {
     margin-right: 1.2rem;
 }
-#header ul li:last-child {
+#header > ul li:last-child {
     margin-right: 0;
 }
 
-#header ul li a {
+#header > ul li a {
     text-decoration: none;
     color: hsl(219, 86%, 57%);
 }
-#header ul li a:hover {
+#header > ul li a:hover {
     text-decoration: underline;
 }
 
