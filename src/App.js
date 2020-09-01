@@ -9,6 +9,7 @@ import Education from './pages/Education';
 import Job from './pages/Job';
 import Certificates from './pages/Certificates';
 import Social from './pages/Social';
+import Privacy from './pages/Privacy';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route exact path="/s/job" component={ Job }/>
             <Route exact path="/s/certificates" component={ Certificates }/>
             <Route exact path="/s/social" component={ Social }/>
+            <Route exact path="/i/privacy-policy" component={ Privacy }/>
           </Switch>
         </div>
       </BrowserRouter>
