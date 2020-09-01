@@ -116,4 +116,6 @@
 #navigation ul li .link-2 {
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
+    border-top: 1px solid #AFAFAF;
+    /*color: hsl(123, 72%, 48%);*/
 }
