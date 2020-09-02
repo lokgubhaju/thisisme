@@ -17,19 +17,38 @@
     font-size: 1.7rem;
     margin-bottom: 1.4rem;
     text-align: center;
+    color: hsl(0, 0%, 4%);
 }
 
-#header > a {
+#header #cta-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#header #cta-buttons #main-button {
     background-color: hsl(219, 86%, 57%);
     padding: .6rem 1.6rem;
     border-radius: .5rem;
     color: hsl(0, 0%, 100%);
     text-decoration: none;
     font-size: 1.4rem;
-    margin-bottom: .6rem;
+    margin-right: .5rem;
 }
-#header > a:hover {
+#header #cta-buttons #main-button:hover {
     background-color: hsl(219, 86%, 48%);
+}
+
+#header #cta-buttons #gh-button {
+    display: block;
+    border: 1px solid hsl(0, 0%, 69%);
+    background-color: hsl(0, 0%, 96%);
+    padding: .6rem .6rem .45rem;
+    border-radius: .5rem;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+}
+#header #cta-buttons #gh-button:hover {
+    background-color: 	hsl(0, 0%, 91%);
 }
 
 #header > ul {
@@ -68,11 +87,11 @@
 }
 
 #navigation div {
-    border: 1px solid #AFAFAF;
+    border: 1px solid hsl(0, 0%, 69%);
     border-radius: .5rem;
     width: 10rem;
     margin-bottom: .6rem;
-    background-color: #f4f4f4;
+    background-color: hsl(0, 0%, 96%);
 }
 
 #navigation div a {
