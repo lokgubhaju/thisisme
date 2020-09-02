@@ -48,7 +48,7 @@
     text-decoration: none;
 }
 #header #cta-buttons #gh-button:hover {
-    background-color: 	hsl(0, 0%, 91%);
+    background-color: hsl(0, 0%, 92%);
 }
 
 #header > ul {
@@ -98,7 +98,7 @@
 
 #navigation ul li {
     width: 11rem;
-    margin-bottom: .35rem;
+    margin-bottom: .4rem;
 }
 #navigation ul li:last-child {
     margin-bottom: 0;
@@ -106,14 +106,14 @@
 
 #navigation ul li a {
     display: block;
-    font-size: 1.25rem;
-    color: hsl(0, 0%, 24%);
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 40%);
     background-color: transparent;
     padding: .4rem;
     border-radius: .5rem;
     text-decoration: none;
 }
 #navigation ul li a:hover {
-    color: hsl(0, 0%, 12%);
-    background-color: hsl(0, 0%, 91%);
+    color: hsl(0, 0%, 25%);
+    background-color: hsl(0, 0%, 92%);
 }
