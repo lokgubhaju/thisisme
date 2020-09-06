@@ -6,7 +6,20 @@ function Job() {
         <>
             <Navigation/>
             <section className="section">
-                <h1>Section</h1>
+                <form>
+                    <div>
+                        <label htmlFor="companyname">Company name</label><br/>
+                        <input type="text" id="companyname" name="companyname"/>
+                    </div>
+                    <div>
+                        <label htmlFor="position">Position</label><br/>
+                        <input type="text" id="position" name="position"/>
+                    </div>
+                    <div>
+                        <label htmlFor="jobyears">Job years <span>(MM/YYYY-MM/YYYY)</span></label><br/>
+                        <input type="text" id="jobyears" name="jobyears"/>
+                    </div>
+                </form>
             </section>
         </>
     );

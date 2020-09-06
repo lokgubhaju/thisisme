@@ -6,7 +6,20 @@ function Certificates() {
         <>
             <Navigation/>
             <section className="section">
-                <h1>Section</h1>
+                <form>
+                    <div>
+                        <label htmlFor="certificatetitle">Certificate title</label><br/>
+                        <input type="text" id="certificatetitle" name="certificatetitle"/>
+                    </div>
+                    <div>
+                        <label htmlFor="certificateid">Certificate ID</label><br/>
+                        <input type="text" id="certificateid" name="certificateid"/>
+                    </div>
+                    <div>
+                        <label htmlFor="certificatereceiveddate">Certificate received date <span>(MM/YYYY)</span></label><br/>
+                        <input type="text" id="certificatereceiveddate" name="certificatereceiveddate"/>
+                    </div>
+                </form>
             </section>
         </>
     );

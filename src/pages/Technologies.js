@@ -6,7 +6,12 @@ function Technologies() {
         <>
             <Navigation/>
             <section className="section">
-                <h1>Section</h1>
+                <form>
+                    <div>
+                        <label htmlFor="technologies">Technologies I use <span>(comma separated)</span></label><br/>
+                        <input type="text" id="technologies" name="technologies"/>
+                    </div>
+                </form>
             </section>
         </>
     );

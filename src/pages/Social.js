@@ -6,7 +6,16 @@ function Social() {
         <>
             <Navigation/>
             <section className="section">
-                <h1>Section</h1>
+                <form>
+                    <div>
+                        <label htmlFor="platformsocialmedia">Platform/social media</label><br/>
+                        <input type="text" id="platformsocialmedia" name="platformsocialmedia"/>
+                    </div>
+                    <div>
+                        <label htmlFor="linkto">Link to</label><br/>
+                        <input type="text" id="linkto" name="linkto"/>
+                    </div>
+                </form>
             </section>
         </>
     );
