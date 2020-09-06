@@ -9,15 +9,16 @@
 }
 
 #header h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
     margin-bottom: .4rem;
+    color: hsl(0, 0%, 10%)
 }
 
 #header p {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     margin-bottom: 1.4rem;
     text-align: center;
-    color: hsl(0, 0%, 4%);
+    color: hsl(0, 0%, 20%);
 }
 
 #header #cta-buttons {
@@ -31,30 +32,32 @@
     border-radius: .5rem;
     color: hsl(0, 0%, 100%);
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-right: .5rem;
+    transition: box-shadow 250ms;
 }
 #header #cta-buttons #main-button:hover {
-    background-color: hsl(219, 86%, 48%);
+    box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.2);
 }
 
 #header #cta-buttons #gh-button {
     display: block;
     border: 1px solid hsl(0, 0%, 69%);
-    background-color: hsl(0, 0%, 96%);
     padding: .6rem .6rem .45rem;
     border-radius: .5rem;
     color: hsl(0, 0%, 100%);
     text-decoration: none;
+    transition: box-shadow 250ms, border 100ms;
 }
 #header #cta-buttons #gh-button:hover {
-    background-color: hsl(0, 0%, 92%);
+    box-shadow: 0px 5px 8px 3px rgba(0,0,0,0.2);
+    border: 1px solid transparent;
 }
 
 #header > ul {
     position: fixed;
     bottom: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -83,13 +86,12 @@
     float: left;
     top: 50%;
     transform: translateY(-50%);
-    background-color: hsl(0, 0%, 96%);
     padding: .8rem;
     border-top-right-radius: .5rem;
     border-bottom-right-radius: .5rem;
-    border-top: 1px solid hsl(0, 0%, 69%);
-    border-right: 1px solid hsl(0, 0%, 69%);
-    border-bottom: 1px solid hsl(0, 0%, 69%);
+    border-top: 1px solid hsl(0, 0%, 78%);
+    border-right: 1px solid hsl(0, 0%, 78%);
+    border-bottom: 1px solid hsl(0, 0%, 78%);
 }
 
 #navigation ul {
@@ -106,14 +108,25 @@
 
 #navigation ul li a {
     display: block;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     color: hsl(0, 0%, 40%);
     background-color: transparent;
-    padding: .4rem;
+    padding: .6rem;
     border-radius: .5rem;
     text-decoration: none;
+    transition: color, background-color 250ms;
 }
 #navigation ul li a:hover {
     color: hsl(0, 0%, 25%);
-    background-color: hsl(0, 0%, 92%);
+    background-color: hsl(0, 0%, 94%);
+}
+
+#navigation ul li #home-button {
+    border: 1px solid hsl(0, 0%, 86%);
+    margin-bottom: 1.2rem;
+    transition: border 250ms;
+}
+#navigation ul li #home-button:hover {
+    border: 1px solid hsl(0, 0%, 69%);
+    background-color: transparent;
 }
