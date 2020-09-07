@@ -32,6 +32,7 @@ function Personal() {
                 </div>
                 <div>
                     <h1>ok?</h1>
+                    <p>preview</p>
                 </div>
             </div>
         </>
