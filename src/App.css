@@ -221,7 +221,7 @@
 }
 
 #section-aside p span {
-    color: rgb(209, 49, 49);
+    color: hsl(0, 63.5%, 50.6%);
 }
 
 #section-aside p a {
@@ -230,4 +230,11 @@
 }
 #section-aside p a:hover {
     text-decoration: underline;
+}
+
+#preview-text {
+    color: hsl(0, 63.5%, 50.6%);
+    font-size: .96rem;
+    margin-top: .2rem;
+    margin-left: .2rem;
 }
