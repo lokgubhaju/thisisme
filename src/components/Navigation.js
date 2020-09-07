@@ -5,7 +5,7 @@ function Navigation() {
     return (
         <nav id="navigation">
             <ul>
-                <li><NavLink id="home-button" to="/" exact activeStyle={{ 'backgroundColor':'hsl(219, 86%, 54%)','color':'hsl(0, 0%, 100%)' }}>Home</NavLink></li>
+                <li><NavLink id="home-button" to="/" exact>Home</NavLink></li>
                 <li><NavLink to="/s/personal" exact activeStyle={{ 'backgroundColor':'hsl(219, 86%, 57%)','color':'hsl(0, 0%, 100%)' }}>Personal</NavLink></li>
                 <li><NavLink to="/s/programming" exact activeStyle={{ 'backgroundColor':'hsl(219, 86%, 57%)','color':'hsl(0, 0%, 100%)' }}>Programming</NavLink></li>
                 <li><NavLink to="/s/technologies" exact activeStyle={{ 'backgroundColor':'hsl(219, 86%, 57%)','color':'hsl(0, 0%, 100%)' }}>Technologies</NavLink></li>

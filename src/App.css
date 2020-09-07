@@ -9,13 +9,13 @@
 }
 
 #header h1 {
-    font-size: 3.8rem;
+    font-size: 3.6rem;
     margin-bottom: .4rem;
     color: hsl(0, 0%, 10%)
 }
 
 #header p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 1.4rem;
     text-align: center;
     color: hsl(0, 0%, 20%);
@@ -139,16 +139,6 @@
     background-color: transparent;
 }
 
-/* NOTES */
-
-#notes {
-    z-index: 10;
-    padding: .8rem;
-    border-radius: .5rem;
-    border: 1px solid hsl(0, 0%, 78%);
-    margin-top: 1.6rem;
-}
-
 /* PAGES */
 
 /* SECTION */
@@ -196,6 +186,21 @@
 
 #section form div input[type="text"], #section form div select {
     padding: .6rem;
+}
+
+#section form input[type="button"] {
+    width: 20%;
+    box-sizing: border-box;
+    border: none;
+    color: hsl(0, 100%, 100%);
+    font-size: 1.01rem;
+    padding: .6rem;
+    background-color: hsl(219, 86%, 57%);
+    cursor: pointer;
+    transition: background-color 250ms;
+}
+#section form input[type="button"]:hover {
+    background-color: hsl(219, 86%, 62%);
 }
 
 #section-aside {

@@ -21,11 +21,12 @@ function Personal() {
                             <label htmlFor="hobbies">My hobbies <span>(comma separated)</span></label><br/>
                             <input type="text" id="hobbies" name="hobbies"/>
                         </div>
+                        <input type="button" value="Update"/>
                     </form>
                 </section>
                 <aside id="section-aside">
                     <h1>Notes:</h1>
-                    <p><span>*</span> all inputs are optional.<br/><span>*</span> comma separated example: English, French, ...<br/><span>*</span> for information about data, see <Link to="/i/privacy-policy" exact>Privacy Policy</Link></p>
+                    <p><span>*</span> all inputs are optional.<br/><span>*</span> comma separated example: English, French, ...<br/><span>*</span> for information about data, see <Link to="/i/privacy-policy" exact>Privacy Policy</Link>.</p>
                 </aside>
             </div>
         </>
