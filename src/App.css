@@ -118,15 +118,10 @@
     border-radius: .5rem;
     text-decoration: none;
     transition: color, background-color 250ms;
-    outline: none;
 }
 #navigation ul li a:hover {
     color: hsl(0, 0%, 25%);
     background-color: hsl(0, 0%, 94%);
-}
-#navigation ul li a:focus {
-    color: hsl(0, 0%, 18%);
-    background-color: hsl(0, 0%, 84%);
 }
 
 #navigation ul li #home-button {
@@ -144,8 +139,11 @@
 /* SECTION */
 
 #section-wrapper {
-    display: grid;
-    place-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+    /*grid-template-columns: auto auto;*/
     height: 100vh;
 }
 
