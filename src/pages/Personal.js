@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
+import { SVG } from '@svgdotjs/svg.js';
 
 function Personal() {
     const imgHeight = 200;
@@ -31,8 +32,8 @@ function Personal() {
                         <p><span>*</span> all inputs are optional.<br/><span>*</span> comma separated example: English, French, ...<br/><span>*</span> for information about data, see <Link to="/i/privacy-policy" exact>Privacy Policy</Link>.</p>
                     </aside>
                 </div>
-                <div>
-                    <svg width="495" height={imgHeight} viewBox="0 0 495" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div id="svg-wrapper">
+                    <svg width="495" height={imgHeight} viewBox="0 0 495 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
                         <text x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My full name</text>
                         <text x="25" y="66" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Languages I speak</text>
