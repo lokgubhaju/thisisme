@@ -7,7 +7,7 @@ import { SVG } from '@svgdotjs/svg.js';
 function Personal() {
     const imgHeight = 200;
 
-    /*const [value, setValue] = useLocalStorage(
+    /*const [value, setValue] = useState(
         {fullnameValue: " ", languagesValue: " ", hobbiesValue: " "}
     );
     const onChange = event => setValue(event.target.value);*/
