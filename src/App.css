@@ -219,7 +219,20 @@
 
 #preview-text {
     color: hsl(0, 63.5%, 50.6%);
-    font-size: .96rem;
+    font-size: .95rem;
     margin-top: .2rem;
     margin-left: .2rem;
+}
+
+#preview-text span {
+    color: hsl(0, 0%, 44%);
+    font-size: .8rem;
+}
+
+#preview-text span a {
+    text-decoration: none;
+    color: hsl(219, 86%, 57%);
+}
+#preview-text span a:hover {
+    text-decoration: underline;
 }

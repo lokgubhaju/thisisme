@@ -35,7 +35,7 @@ function Job() {
                         <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
                         <text x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My job</text>
                     </svg>
-                    <p id="preview-text">preview</p>
+                    <p id="preview-text">preview <span>- you can edit the layout in the <Link to="/s/result" exact>Result</Link> section.</span></p>
                 </div>
             </div>
         </>

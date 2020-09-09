@@ -11,7 +11,7 @@ function Technologies() {
       );
     const onChange = event => setValue(event.target.value);
 
-    const technologiesValue = (value === '') ? <text x="25" y="60" fill="hsl(0, 63.5%, 50.6%)" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">Nothing here</text> : (value.length <= 2) ? <text x="25" y="60" fill="hsl(0, 63.5%, 50.6%)" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">Please, add a text with more than 2 characters</text> : <text x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{value}</text>;
+    const technologiesValue = (value === '') ? <text x="25" y="62" fill="hsl(0, 63.5%, 50.6%)" fontFamily="Segoe UI" fontWeight="400" fontSize="15px">Nothing here</text> : (value.length <= 2) ? <text x="25" y="62" fill="hsl(0, 63.5%, 50.6%)" fontFamily="Segoe UI" fontWeight="400" fontSize="15px">Please, add a text with more than 2 characters</text> : <text x="25" y="62" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="15px">{value}</text>;
 
     const svgImageTechnologies = (
         <svg width="495" height={imgHeight} viewBox="0 0 495 200" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@ function Technologies() {
                 </div>
                 <div>
                     {svgImageTechnologies}
-                    <p id="preview-text">preview</p>
+                    <p id="preview-text">preview <span>- you can edit the layout in the <Link to="/s/result" exact>Result</Link> section.</span></p>
                 </div>
             </div>
         </>
