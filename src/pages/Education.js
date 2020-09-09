@@ -23,7 +23,6 @@ function Education() {
                                 <label htmlFor="careeryears">Career years <span>(MM/YYYY-MM/YYYY)</span></label><br/>
                                 <input type="text" id="careeryears" name="careeryears"/>
                             </div>
-                            <input type="button" value="Add"/>
                         </form>
                     </section>
                     <aside id="section-aside">

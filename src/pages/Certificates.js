@@ -23,7 +23,6 @@ function Certificates() {
                                 <label htmlFor="certificatereceiveddate">Certificate received date <span>(MM/YYYY)</span></label><br/>
                                 <input type="text" id="certificatereceiveddate" name="certificatereceiveddate"/>
                             </div>
-                            <input type="button" value="Add"/>
                         </form>
                     </section>
                     <aside id="section-aside">

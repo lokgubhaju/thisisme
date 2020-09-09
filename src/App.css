@@ -185,21 +185,6 @@
     padding: .6rem;
 }
 
-#section form input[type="button"] {
-    width: 20%;
-    box-sizing: border-box;
-    border: none;
-    color: hsl(0, 100%, 100%);
-    font-size: 1.01rem;
-    padding: .6rem;
-    background-color: hsl(219, 86%, 57%);
-    cursor: pointer;
-    transition: background-color 250ms;
-}
-#section form input[type="button"]:hover {
-    background-color: hsl(219, 86%, 62%);
-}
-
 #section-aside {
     padding: .8rem;
     border-radius: .5rem;

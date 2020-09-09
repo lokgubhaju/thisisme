@@ -18,7 +18,6 @@ function Social() {
                                 <label htmlFor="linkto">Link to</label><br/>
                                 <input type="text" id="linkto" name="linkto"/>
                             </div>
-                            <input type="button" value="Add"/>
                         </form>
                     </section>
                     <aside id="section-aside">

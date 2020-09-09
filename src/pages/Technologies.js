@@ -32,7 +32,6 @@ function Technologies() {
                                 <label htmlFor="technologies">Technologies I use <span>(comma separated)</span></label><br/>
                                 <input type="text" id="technologies" name="technologies"  onChange={onChange} value={value}/>
                             </div>
-                            <input type="button" value="Add"/>
                         </form>
                     </section>
                     <aside id="section-aside">

@@ -60,7 +60,6 @@ function Personal() {
                                 <label htmlFor="hobbiesValue">My hobbies <span>(comma separated)</span></label><br/>
                                 <input onChange={valueChange} value={value.hobbiesValue} type="text" id="hobbiesValue" name="hobbiesValue"/>
                             </div>
-                            <input type="button" value="Update"/>
                         </form>
                     </section>
                     <aside id="section-aside">

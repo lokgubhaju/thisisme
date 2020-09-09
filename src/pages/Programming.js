@@ -32,7 +32,6 @@ function Programming() {
                                 <label htmlFor="programming">Programming languages I code in <span>(comma separated)</span></label><br/>
                                 <input type="text" id="programming" name="programming" onChange={onChange} value={value}/>
                             </div>
-                            <input type="button" value="Add"/>
                         </form>
                     </section>
                     <aside id="section-aside">
