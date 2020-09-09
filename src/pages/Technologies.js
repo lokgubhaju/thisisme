@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
+import useLocalStorage from '../scripts/localStorageData';
 
 function Technologies() {
     const imgHeight = 200;
+
+    const [value, setValue] = useLocalStorage(
+        'technologiesValueStored'
+      );
+    const onChange = event => setValue(event.target.value);
+
+    const technologiesValue = (value === '') ? <text x="25" y="60" fill="hsl(0, 63.5%, 50.6%)" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">Nothing here</text> : (value.length <= 2) ? <text x="25" y="60" fill="hsl(0, 63.5%, 50.6%)" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">Please, add a text with more than 2 characters</text> : <text x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{value}</text>;
+
+    const svgImageTechnologies = (
+        <svg width="495" height={imgHeight} viewBox="0 0 495 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
+            <text x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Technologies I use</text>
+            {technologiesValue}
+        </svg>
+    );
+
     return (
         <>
             <Navigation/>
@@ -13,7 +30,7 @@ function Technologies() {
                         <form>
                             <div>
                                 <label htmlFor="technologies">Technologies I use <span>(comma separated)</span></label><br/>
-                                <input type="text" id="technologies" name="technologies"/>
+                                <input type="text" id="technologies" name="technologies"  onChange={onChange} value={value}/>
                             </div>
                             <input type="button" value="Add"/>
                         </form>
@@ -24,10 +41,7 @@ function Technologies() {
                     </aside>
                 </div>
                 <div>
-                    <svg width="495" height={imgHeight} viewBox="0 0 495 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
-                        <text x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Technologies I use</text>
-                    </svg>
+                    {svgImageTechnologies}
                     <p id="preview-text">preview</p>
                 </div>
             </div>
