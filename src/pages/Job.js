@@ -26,7 +26,7 @@ function Job() {
     const jobYearsText = (valueJobYears === '') ? null : <text x="25" y="36"><tspan x="25" y="144" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Job years</tspan><tspan x="25" y="168" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueJobYears}</tspan></text>;
 
     const svgImageJob = (
-        <svg width="495" height={imgHeight} viewBox="0 0 495 194" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
             {jobCompanyText}
             {jobPositionText}

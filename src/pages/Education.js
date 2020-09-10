@@ -21,16 +21,22 @@ function Education() {
       );
     const valueChangeEducationYears = event => setValueEducationYears(event.target.value);
 
+    {/*const educationTitlePositionTitle = (valueEducationName === '') ? 36 : 90;
+    const educationTitlePositionText = (valueEducationName === '') ? 60 : 114;
+    const educationYearsPositionTitle = (valueEducationName === '' && valueEducationTitle === '') ? 36 : 144 && (valueEducationTitle === '') ? 90 : 144 && (educationTitlePositionTitle === 36) ? 90 : 144;
+    const educationYearsPositionText = (valueEducationName === '' && valueEducationTitle === '') ? 60 : 168 && (valueEducationTitle === '') ? 114 : 168 && (educationTitlePositionText === 60) ? 114 : 168;
+
     const educationNameText = (valueEducationName === '') ? null : <text x="25" y="36"><tspan x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">College name</tspan><tspan x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueEducationName}</tspan></text>;
-    const educationTitleText = (valueEducationTitle === '') ? null : <text x="25" y="36"><tspan x="25" y="90" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Career title</tspan><tspan x="25" y="114" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueEducationTitle}</tspan></text>;
-    const educationYearsText = (valueEducationYears === '') ? null : <text x="25" y="36"><tspan x="25" y="144" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Career years</tspan><tspan x="25" y="168" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueEducationYears}</tspan></text>;
+    const educationTitleText = (valueEducationTitle === '') ? null : <text x="25" y="36"><tspan x="25" y={educationTitlePositionTitle} fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Career title</tspan><tspan x="25" y={educationTitlePositionText} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueEducationTitle}</tspan></text>;
+    const educationYearsText = (valueEducationYears === '') ? null : <text x="25" y="36"><tspan x="25" y={educationYearsPositionTitle} fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Career years</tspan><tspan x="25" y={educationYearsPositionText} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueEducationYears}</tspan></text>;*/}
 
     const svgImageEducation = (
-        <svg width="495" height={imgHeight} viewBox="0 0 495 194" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
-            {educationNameText}
+            <text x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My education</text>
+            {/*educationNameText}
             {educationTitleText}
-            {educationYearsText}
+            {educationYearsText*/}
          </svg>
     );
 

@@ -21,12 +21,19 @@ function Personal() {
       );
     const valueChangePersonalHobbies = event => setValuePersonalHobbies(event.target.value);
 
+    const personalLanguagesPositionTitle = (valuePersonalFullname === '') ? 36 : 90;
+    const personalLanguagesPositionText = (valuePersonalFullname === '') ? 60 : 114;
+    const personalHobbiesPositionTitle = (valuePersonalFullname === '' && valuePersonalLanguages === '') ? 36 : 144 && (valuePersonalLanguages === '') ? 90 : 144 && (personalLanguagesPositionTitle === 36) ? 90 : 144;
+    const personalHobbiesPositionText = (valuePersonalFullname === '' && valuePersonalLanguages === '') ? 60 : 168 && (valuePersonalLanguages === '') ? 114 : 168 && (personalLanguagesPositionText === 60) ? 114 : 168;
+
     const personalFullnameText = (valuePersonalFullname === '') ? null : <text x="25" y="36"><tspan x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My full name</tspan><tspan x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valuePersonalFullname}</tspan></text>;
-    const personalLanguagesText = (valuePersonalLanguages === '') ? null : <text x="25" y="36"><tspan x="25" y="90" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Languages I speak</tspan><tspan x="25" y="114" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valuePersonalLanguages}</tspan></text>;
-    const personalHobbiesText = (valuePersonalHobbies === '') ? null : <text x="25" y="36"><tspan x="25" y="144" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My hobbies</tspan><tspan x="25" y="168" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valuePersonalHobbies}</tspan></text>;;
+    const personalLanguagesText = (valuePersonalLanguages === '') ? null : <text x="25" y="36"><tspan x="25" y={personalLanguagesPositionTitle} fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Languages I speak</tspan><tspan x="25" y={personalLanguagesPositionText} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valuePersonalLanguages}</tspan></text>;
+    const personalHobbiesText = (valuePersonalHobbies === '') ? null : <text x="25" y="36"><tspan x="25" y={personalHobbiesPositionTitle} fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My hobbies</tspan><tspan x="25" y={personalHobbiesPositionText} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valuePersonalHobbies}</tspan></text>;;
+
+    //const imgHeight = (valuePersonalHobbies === '') ? 138 : 194;
 
     const svgImagePersonal = (
-        <svg width="495" height={imgHeight} viewBox="0 0 495 194" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
             {personalFullnameText}
             {personalLanguagesText}
