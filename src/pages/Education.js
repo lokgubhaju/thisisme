@@ -34,6 +34,9 @@ function Education() {
         <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
             <text x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My education</text>
+            <rect x="25" y="52" width="140px" height="118px" rx="4.5" fill="#FAFBFC" stroke="#E4E2E2"/>
+            <rect x="175" y="52" width="140px" height="118px" rx="4.5" fill="#FAFBFC" stroke="#E4E2E2"/>
+            <rect x="325" y="52" width="140px" height="118px" rx="4.5" fill="#FAFBFC" stroke="#E4E2E2"/>
             {/*educationNameText}
             {educationTitleText}
             {educationYearsText*/}
