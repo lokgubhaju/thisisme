@@ -4,19 +4,18 @@ import Navigation from '../components/Navigation';
 import useLocalStorage from '../scripts/localStorageData';
 
 function Programming() {
-    const imgHeight = 200;
+    const imgHeight = 194;
 
     const [valueProgramming, setValueProgramming] = useLocalStorage(
         'programmingValueStored'
       );
     const valueChangeProgramming = event => setValueProgramming(event.target.value);
 
-    const programmingText = (valueProgramming === '') ? <text x="25" y="60" fill="hsl(0, 63.5%, 50.6%)" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">Nothing here</text> : (valueProgramming.length <= 2) ? <text x="25" y="60" fill="hsl(0, 63.5%, 50.6%)" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">Please, add a text with more than 2 characters</text> : <text x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueProgramming}</text>;
+    const programmingText = (valueProgramming === '') ? null : <text x="25" y="36"><tspan x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Programming languages I code in</tspan><tspan x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueProgramming}</tspan></text>;
 
     const svgImageProgramming = (
-        <svg width="495" height={imgHeight} viewBox="0 0 495 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="495" height={imgHeight} viewBox="0 0 495 194" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
-            <text x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Programming languages I code in</text>
             {programmingText}
         </svg>
     );
