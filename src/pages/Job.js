@@ -31,6 +31,9 @@ function Job() {
             {jobCompanyText}
             {jobPositionText}
             {jobYearsText}
+            {/*<rect x="25" y="52" width="140px" height="118px" rx="4.5" fill="#FAFBFC" stroke="#E4E2E2"/>
+            <rect x="175" y="52" width="140px" height="118px" rx="4.5" fill="#FAFBFC" stroke="#E4E2E2"/>
+            <rect x="325" y="52" width="140px" height="118px" rx="4.5" fill="#FAFBFC" stroke="#E4E2E2"/>*/}
          </svg>
     );
 
