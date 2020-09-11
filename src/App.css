@@ -160,7 +160,7 @@
 #section form div {
     margin-bottom: 1rem;
 }
-#section form div:last-child {
+#section form div:last-of-type {
     margin-bottom: 0;
 }
 
@@ -187,6 +187,26 @@
 
 #section form div input[type="text"], #section form div select {
     padding: .6rem;
+}
+
+#section form #toggle-button {
+    margin-top: 1rem;
+    padding: .6rem 1rem;
+    background-color: hsl(219, 86%, 57%);
+    color: hsl(0, 100%, 100%);
+    font-size: .8rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+#section form #toggle-button:hover {
+    background-color: hsl(219, 86%, 63%);
+}
+
+#section form #toggle-button + p {
+    margin-top: .35rem;
+    color: hsl(0, 0%, 44%);
+    font-size: .75rem;
 }
 
 #section-aside {

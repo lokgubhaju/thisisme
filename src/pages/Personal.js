@@ -28,7 +28,7 @@ function Personal() {
 
     const personalFullnameText = (valuePersonalFullname === '') ? null : <text x="25" y="36"><tspan x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My full name</tspan><tspan x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valuePersonalFullname}</tspan></text>;
     const personalLanguagesText = (valuePersonalLanguages === '') ? null : <text x="25" y="36"><tspan x="25" y={personalLanguagesPositionTitle} fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Languages I speak</tspan><tspan x="25" y={personalLanguagesPositionText} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valuePersonalLanguages}</tspan></text>;
-    const personalHobbiesText = (valuePersonalHobbies === '') ? null : <text x="25" y="36"><tspan x="25" y={personalHobbiesPositionTitle} fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My hobbies</tspan><tspan x="25" y={personalHobbiesPositionText} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valuePersonalHobbies}</tspan></text>;;
+    const personalHobbiesText = (valuePersonalHobbies === '') ? null : <text x="25" y="36"><tspan x="25" y={personalHobbiesPositionTitle} fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My hobbies</tspan><tspan x="25" y={personalHobbiesPositionText} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valuePersonalHobbies}</tspan></text>;
 
     //const imgHeight = (valuePersonalHobbies === '') ? 138 : 194;
 
