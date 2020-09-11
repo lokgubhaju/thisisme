@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import useLocalStorage from '../scripts/localStorageData';
@@ -20,15 +20,6 @@ function Education() {
         'educationYearsValueStored'
       );
     const valueChangeEducationYears = event => setValueEducationYears(event.target.value);
-
-    {/*const educationTitlePositionTitle = (valueEducationName === '') ? 36 : 90;
-    const educationTitlePositionText = (valueEducationName === '') ? 60 : 114;
-    const educationYearsPositionTitle = (valueEducationName === '' && valueEducationTitle === '') ? 36 : 144 && (valueEducationTitle === '') ? 90 : 144 && (educationTitlePositionTitle === 36) ? 90 : 144;
-    const educationYearsPositionText = (valueEducationName === '' && valueEducationTitle === '') ? 60 : 168 && (valueEducationTitle === '') ? 114 : 168 && (educationTitlePositionText === 60) ? 114 : 168;
-
-    const educationNameText = (valueEducationName === '') ? null : <text x="25" y="36"><tspan x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">College name</tspan><tspan x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueEducationName}</tspan></text>;
-    const educationTitleText = (valueEducationTitle === '') ? null : <text x="25" y="36"><tspan x="25" y={educationTitlePositionTitle} fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Career title</tspan><tspan x="25" y={educationTitlePositionText} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueEducationTitle}</tspan></text>;
-    const educationYearsText = (valueEducationYears === '') ? null : <text x="25" y="36"><tspan x="25" y={educationYearsPositionTitle} fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Career years</tspan><tspan x="25" y={educationYearsPositionText} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueEducationYears}</tspan></text>;*/}
 
     const educationTitlePositionTitle = (valueEducationName === '') ? 68 : 106;
     const educationTitlePositionText = (valueEducationName === '') ? 84 : 122;
@@ -56,32 +47,58 @@ function Education() {
          </svg>
     );
 
+    const [form, changeForm] = useState(false);
+    const toggleForm = () => changeForm(!form);
+
+    const educationForm1 = (
+        <form>
+            <div>
+                <label htmlFor="collegename">College name</label><br/>
+                <input onChange={valueChangeEducationName} value={valueEducationName} type="text" id="collegename" name="collegename"/>
+            </div>
+            <div>
+                <label htmlFor="careertitle">Career title</label><br/>
+                <input onChange={valueChangeEducationTitle} value={valueEducationTitle} type="text" id="careertitle" name="careertitle"/>
+            </div>
+            <div>
+                <label htmlFor="careeryears">Career years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
+                <input onChange={valueChangeEducationYears} value={valueEducationYears} type="text" id="careeryears" name="careeryears"/>
+            </div>
+        </form>
+    );
+
+    const educationForm2 = (
+        <form>
+            <div>
+                <label htmlFor="collegename">College sexy</label><br/>
+                <input onChange={valueChangeEducationName} value={valueEducationName} type="text" id="collegename" name="collegename"/>
+            </div>
+            <div>
+                <label htmlFor="careertitle">Career title</label><br/>
+                <input onChange={valueChangeEducationTitle} value={valueEducationTitle} type="text" id="careertitle" name="careertitle"/>
+            </div>
+            <div>
+                <label htmlFor="careeryears">Career years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
+                <input onChange={valueChangeEducationYears} value={valueEducationYears} type="text" id="careeryears" name="careeryears"/>
+            </div>
+        </form>
+    );
+
     return (
         <>
             <Navigation/>
             <div id="section-wrapper">
                 <div>
                     <section id="section">
-                        <form>
-                            <div>
-                                <label htmlFor="collegename">College name</label><br/>
-                                <input onChange={valueChangeEducationName} value={valueEducationName} type="text" id="collegename" name="collegename"/>
-                            </div>
-                            <div>
-                                <label htmlFor="careertitle">Career title</label><br/>
-                                <input onChange={valueChangeEducationTitle} value={valueEducationTitle} type="text" id="careertitle" name="careertitle"/>
-                            </div>
-                            <div>
-                                <label htmlFor="careeryears">Career years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
-                                <input onChange={valueChangeEducationYears} value={valueEducationYears} type="text" id="careeryears" name="careeryears"/>
-                            </div>
-                            <button id="toggle-button" onClick="">Toggle form</button>
-                            <p> each form corresponds to each container image</p>
-                        </form>
+                        <div id="form-wrapper">
+                            {form ? educationForm2 : educationForm1}
+                            <button id="toggle-button" onClick={toggleForm}>Toggle form</button>
+                            <p> each form corresponds to each inner card.</p>
+                        </div>
                     </section>
                     <aside id="section-aside">
                         <h1>Notes:</h1>
-                        <p><span>*</span> all inputs are optional.<br/><span>*</span> only up to 2 cards.<br/><span>*</span> add "Present" if necessary (eg. 04/2000-Present).<br/><span>*</span> for information about data, see <Link to="/i/privacy-policy" exact>Privacy Policy</Link>.</p>
+                        <p><span>*</span> all inputs are optional.<br/><span>*</span> only up to 2 inner cards.<br/><span>*</span> add "Present" if necessary (eg. 04/2000-Present).<br/><span>*</span> for information about data, see <Link to="/i/privacy-policy" exact>Privacy Policy</Link>.</p>
                     </aside>
                 </div>
                 <div>
