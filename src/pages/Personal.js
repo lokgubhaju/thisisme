@@ -47,20 +47,22 @@ function Personal() {
             <div id="section-wrapper">
                 <div>
                     <section id="section">
-                        <form>
-                            <div>
-                                <label htmlFor="fullnameValue">My full name</label><br/>
-                                <input onChange={valueChangePersonalFullname} value={valuePersonalFullname} type="text" id="fullnameValue" name="fullnameValue"/>
-                            </div>
-                            <div>
-                                <label htmlFor="languagesValue">Languages I speak <span>(comma separated)</span></label><br/>
-                                <input onChange={valueChangePersonalLanguages} value={valuePersonalLanguages} type="text" id="languagesValue" name="languagesValue"/>
-                            </div>
-                            <div>
-                                <label htmlFor="hobbiesValue">My hobbies <span>(comma separated)</span></label><br/>
-                                <input onChange={valueChangePersonalHobbies} value={valuePersonalHobbies} type="text" id="hobbiesValue" name="hobbiesValue"/>
-                            </div>
-                        </form>
+                        <div id="form-wrapper">
+                            <form>
+                                <div>
+                                    <label htmlFor="fullnameValue">My full name</label><br/>
+                                    <input onChange={valueChangePersonalFullname} value={valuePersonalFullname} type="text" id="fullnameValue" name="fullnameValue"/>
+                                </div>
+                                <div>
+                                    <label htmlFor="languagesValue">Languages I speak <span>(comma separated)</span></label><br/>
+                                    <input onChange={valueChangePersonalLanguages} value={valuePersonalLanguages} type="text" id="languagesValue" name="languagesValue"/>
+                                </div>
+                                <div>
+                                    <label htmlFor="hobbiesValue">My hobbies <span>(comma separated)</span></label><br/>
+                                    <input onChange={valueChangePersonalHobbies} value={valuePersonalHobbies} type="text" id="hobbiesValue" name="hobbiesValue"/>
+                                </div>
+                            </form>
+                        </div>
                     </section>
                     <aside id="section-aside">
                         <h1>Notes:</h1>

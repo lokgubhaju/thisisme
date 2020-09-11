@@ -26,12 +26,14 @@ function Programming() {
             <div id="section-wrapper">
                 <div>
                     <section id="section">
-                        <form>
-                            <div>
-                                <label htmlFor="programming">Programming languages I code in <span>(comma separated)</span></label><br/>
-                                <input onChange={valueChangeProgramming} value={valueProgramming} type="text" id="programming" name="programming"/>
-                            </div>
-                        </form>
+                        <div id="form-wrapper">
+                            <form>
+                                <div>
+                                    <label htmlFor="programming">Programming languages I code in <span>(comma separated)</span></label><br/>
+                                    <input onChange={valueChangeProgramming} value={valueProgramming} type="text" id="programming" name="programming"/>
+                                </div>
+                            </form>
+                        </div>
                     </section>
                     <aside id="section-aside">
                         <h1>Notes:</h1>

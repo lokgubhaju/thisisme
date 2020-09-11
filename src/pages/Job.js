@@ -43,20 +43,22 @@ function Job() {
             <div id="section-wrapper">
                 <div>
                     <section id="section">
-                        <form>
-                            <div>
-                                <label htmlFor="companyname">Company name</label><br/>
-                                <input onChange={valueChangeJobCompany} value={valueJobCompany} type="text" id="companyname" name="companyname"/>
-                            </div>
-                            <div>
-                                <label htmlFor="position">Position</label><br/>
-                                <input onChange={valueChangeJobPosition} value={valueJobPosition} type="text" id="position" name="position"/>
-                            </div>
-                            <div>
-                                <label htmlFor="jobyears">Job years <span>(MM/YYYY-MM/YYYY)</span></label><br/>
-                                <input onChange={valueChangeJobYears} value={valueJobYears} type="text" id="jobyears" name="jobyears"/>
-                            </div>
-                        </form>
+                        <div id="form-wrapper">
+                            <form>
+                                <div>
+                                    <label htmlFor="companyname">Company name</label><br/>
+                                    <input onChange={valueChangeJobCompany} value={valueJobCompany} type="text" id="companyname" name="companyname"/>
+                                </div>
+                                <div>
+                                    <label htmlFor="position">Position</label><br/>
+                                    <input onChange={valueChangeJobPosition} value={valueJobPosition} type="text" id="position" name="position"/>
+                                </div>
+                                <div>
+                                    <label htmlFor="jobyears">Job years <span>(MM/YYYY-MM/YYYY)</span></label><br/>
+                                    <input onChange={valueChangeJobYears} value={valueJobYears} type="text" id="jobyears" name="jobyears"/>
+                                </div>
+                            </form>
+                        </div>
                     </section>
                     <aside id="section-aside">
                         <h1>Notes:</h1>

@@ -6,29 +6,53 @@ import useLocalStorage from '../scripts/localStorageData';
 function Education() {
     const imgHeight = 194;
 
-    const [valueEducationName, setValueEducationName] = useLocalStorage(
-        'educationNameValueStored'
+    const [valueEducationName1, setValueEducationName1] = useLocalStorage(
+        'educationNameValueStored1'
       );
-    const valueChangeEducationName = event => setValueEducationName(event.target.value);
+    const valueChangeEducationName1 = event => setValueEducationName1(event.target.value);
 
-    const [valueEducationTitle, setValueEducationTitle] = useLocalStorage(
-        'educationTitleValueStored'
+    const [valueEducationTitle1, setValueEducationTitle1] = useLocalStorage(
+        'educationTitleValueStored1'
       );
-    const valueChangeEducationTitle = event => setValueEducationTitle(event.target.value);
+    const valueChangeEducationTitle1 = event => setValueEducationTitle1(event.target.value);
 
-    const [valueEducationYears, setValueEducationYears] = useLocalStorage(
-        'educationYearsValueStored'
+    const [valueEducationYears1, setValueEducationYears1] = useLocalStorage(
+        'educationYearsValueStored1'
       );
-    const valueChangeEducationYears = event => setValueEducationYears(event.target.value);
+    const valueChangeEducationYears1 = event => setValueEducationYears1(event.target.value);
 
-    const educationTitlePositionTitle = (valueEducationName === '') ? 68 : 106;
-    const educationTitlePositionText = (valueEducationName === '') ? 84 : 122;
-    const educationYearsPositionTitle = (valueEducationName === '' && valueEducationTitle === '') ? 68 : 144 && (valueEducationTitle === '') ? 106 : 144 && (educationTitlePositionTitle === 68) ? 106 : 144;
-    const educationYearsPositionText = (valueEducationName === '' && valueEducationTitle === '') ? 84 : 160 && (valueEducationTitle === '') ? 122 : 160 && (educationTitlePositionText === 84) ? 122 : 160;
+    const educationTitlePositionTitle1 = (valueEducationName1 === '') ? 68 : 106;
+    const educationTitlePositionText1 = (valueEducationName1 === '') ? 84 : 122;
+    const educationYearsPositionTitle1 = (valueEducationName1 === '' && valueEducationTitle1 === '') ? 68 : 144 && (valueEducationTitle1 === '') ? 106 : 144 && (educationTitlePositionTitle1 === 68) ? 106 : 144;
+    const educationYearsPositionText1 = (valueEducationName1 === '' && valueEducationTitle1 === '') ? 84 : 160 && (valueEducationTitle1 === '') ? 122 : 160 && (educationTitlePositionText1 === 84) ? 122 : 160;
 
-    const educationNameText = (valueEducationName === '') ? null : <text x="30" y="67"><tspan x="30" y="68" fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">College name</tspan><tspan x="30" y="84" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueEducationName}</tspan></text>;
-    const educationTitleText = (valueEducationTitle === '') ? null : <text x="30" y="67"><tspan x="30" y={educationTitlePositionTitle} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Career title</tspan><tspan x="30" y={educationTitlePositionText} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueEducationTitle}</tspan></text>;
-    const educationYearsText = (valueEducationYears === '') ? null : <text x="30" y="67"><tspan x="30" y={educationYearsPositionTitle} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Career years</tspan><tspan x="30" y={educationYearsPositionText} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueEducationYears}</tspan></text>;
+    const educationNameText1 = (valueEducationName1 === '') ? null : <text x="30" y="67"><tspan x="30" y="68" fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">College name</tspan><tspan x="30" y="84" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueEducationName1}</tspan></text>;
+    const educationTitleText1 = (valueEducationTitle1 === '') ? null : <text x="30" y="67"><tspan x="30" y={educationTitlePositionTitle1} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Career title</tspan><tspan x="30" y={educationTitlePositionText1} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueEducationTitle1}</tspan></text>;
+    const educationYearsText1 = (valueEducationYears1 === '') ? null : <text x="30" y="67"><tspan x="30" y={educationYearsPositionTitle1} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Career years</tspan><tspan x="30" y={educationYearsPositionText1} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueEducationYears1}</tspan></text>;
+
+    const [valueEducationName2, setValueEducationName2] = useLocalStorage(
+        'educationNameValueStored2'
+      );
+    const valueChangeEducationName2 = event => setValueEducationName2(event.target.value);
+
+    const [valueEducationTitle2, setValueEducationTitle2] = useLocalStorage(
+        'educationTitleValueStored2'
+      );
+    const valueChangeEducationTitle2 = event => setValueEducationTitle2(event.target.value);
+
+    const [valueEducationYears2, setValueEducationYears2] = useLocalStorage(
+        'educationYearsValueStored2'
+      );
+    const valueChangeEducationYears2 = event => setValueEducationYears2(event.target.value);
+
+    const educationTitlePositionTitle2 = (valueEducationName2 === '') ? 68 : 106;
+    const educationTitlePositionText2 = (valueEducationName2 === '') ? 84 : 122;
+    const educationYearsPositionTitle2 = (valueEducationName2 === '' && valueEducationTitle2 === '') ? 68 : 144 && (valueEducationTitle2 === '') ? 106 : 144 && (educationTitlePositionTitle2 === 68) ? 106 : 144;
+    const educationYearsPositionText2 = (valueEducationName2 === '' && valueEducationTitle2 === '') ? 84 : 160 && (valueEducationTitle2 === '') ? 122 : 160 && (educationTitlePositionText2 === 84) ? 122 : 160;
+
+    const educationNameText2 = (valueEducationName2 === '') ? null : <text x="258" y="67"><tspan x="258" y="68" fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">College name</tspan><tspan x="258" y="84" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueEducationName2}</tspan></text>;
+    const educationTitleText2 = (valueEducationTitle2 === '') ? null : <text x="258" y="67"><tspan x="258" y={educationTitlePositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Career title</tspan><tspan x="258" y={educationTitlePositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueEducationTitle2}</tspan></text>;
+    const educationYearsText2 = (valueEducationYears2 === '') ? null : <text x="258" y="67"><tspan x="258" y={educationYearsPositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Career years</tspan><tspan x="258" y={educationYearsPositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueEducationYears2}</tspan></text>;
 
     const svgImageEducation = (
         <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,14 +60,16 @@ function Education() {
             <text x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My education</text>
             <g>
                 <rect x="25" y="52" width="215px" height="118px" rx="4.5" fill="#FAFBFC" stroke="#E4E2E2"/>
-                {educationNameText}
-                {educationTitleText}
-                {educationYearsText}
+                {educationNameText1}
+                {educationTitleText1}
+                {educationYearsText1}
             </g>
-            <rect x="253" y="52" width="215px" height="118px" rx="4.5" fill="#FAFBFC" stroke="#E4E2E2"/>
-            {/*educationNameText}
-            {educationTitleText}
-            {educationYearsText*/}
+            <g>
+                <rect x="253" y="52" width="215px" height="118px" rx="4.5" fill="#FAFBFC" stroke="#E4E2E2"/>
+                {educationNameText2}
+                {educationTitleText2}
+                {educationYearsText2}
+            </g>
          </svg>
     );
 
@@ -54,15 +80,15 @@ function Education() {
         <form>
             <div>
                 <label htmlFor="collegename">College name</label><br/>
-                <input onChange={valueChangeEducationName} value={valueEducationName} type="text" id="collegename" name="collegename"/>
+                <input onChange={valueChangeEducationName1} value={valueEducationName1} type="text" id="collegename" name="collegename"/>
             </div>
             <div>
                 <label htmlFor="careertitle">Career title</label><br/>
-                <input onChange={valueChangeEducationTitle} value={valueEducationTitle} type="text" id="careertitle" name="careertitle"/>
+                <input onChange={valueChangeEducationTitle1} value={valueEducationTitle1} type="text" id="careertitle" name="careertitle"/>
             </div>
             <div>
                 <label htmlFor="careeryears">Career years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
-                <input onChange={valueChangeEducationYears} value={valueEducationYears} type="text" id="careeryears" name="careeryears"/>
+                <input onChange={valueChangeEducationYears1} value={valueEducationYears1} type="text" id="careeryears" name="careeryears"/>
             </div>
         </form>
     );
@@ -70,16 +96,16 @@ function Education() {
     const educationForm2 = (
         <form>
             <div>
-                <label htmlFor="collegename">College sexy</label><br/>
-                <input onChange={valueChangeEducationName} value={valueEducationName} type="text" id="collegename" name="collegename"/>
+                <label htmlFor="collegename">College name</label><br/>
+                <input onChange={valueChangeEducationName2} value={valueEducationName2} type="text" id="collegename" name="collegename"/>
             </div>
             <div>
                 <label htmlFor="careertitle">Career title</label><br/>
-                <input onChange={valueChangeEducationTitle} value={valueEducationTitle} type="text" id="careertitle" name="careertitle"/>
+                <input onChange={valueChangeEducationTitle2} value={valueEducationTitle2} type="text" id="careertitle" name="careertitle"/>
             </div>
             <div>
                 <label htmlFor="careeryears">Career years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
-                <input onChange={valueChangeEducationYears} value={valueEducationYears} type="text" id="careeryears" name="careeryears"/>
+                <input onChange={valueChangeEducationYears2} value={valueEducationYears2} type="text" id="careeryears" name="careeryears"/>
             </div>
         </form>
     );

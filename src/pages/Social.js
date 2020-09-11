@@ -9,16 +9,18 @@ function Social() {
             <div id="section-wrapper">
                 <div>
                     <section id="section">
-                        <form>
-                            <div>
-                                <label htmlFor="platformsocialmedia">Platform/social media</label><br/>
-                                <input type="text" id="platformsocialmedia" name="platformsocialmedia"/>
-                            </div>
-                            <div>
-                                <label htmlFor="linkto">Link to</label><br/>
-                                <input type="text" id="linkto" name="linkto"/>
-                            </div>
-                        </form>
+                        <div id="form-wrapper">
+                            <form>
+                                <div>
+                                    <label htmlFor="platformsocialmedia">Platform/social media</label><br/>
+                                    <input type="text" id="platformsocialmedia" name="platformsocialmedia"/>
+                                </div>
+                                <div>
+                                    <label htmlFor="linkto">Link to</label><br/>
+                                    <input type="text" id="linkto" name="linkto"/>
+                                </div>
+                            </form>
+                        </div>
                     </section>
                     <aside id="section-aside">
                         <h1>Notes:</h1>

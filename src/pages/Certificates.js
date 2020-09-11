@@ -40,20 +40,22 @@ function Certificates() {
             <div id="section-wrapper">
                 <div>
                     <section id="section">
-                        <form>
-                            <div>
-                                <label htmlFor="certificatetitle">Certificate title</label><br/>
-                                <input onChange={valueChangeCertificatesTitle} value={valueCertificatesTitle} type="text" id="certificatetitle" name="certificatetitle"/>
-                            </div>
-                            <div>
-                                <label htmlFor="certificateid">Certificate ID</label><br/>
-                                <input onChange={valueChangeCertificatesId} value={valueCertificatesId} type="text" id="certificateid" name="certificateid"/>
-                            </div>
-                            <div>
-                                <label htmlFor="certificatereceiveddate">Certificate received date <span>(MM/YYYY)</span></label><br/>
-                                <input onChange={valueChangeCertificatesDate} value={valueCertificatesDate} type="text" id="certificatereceiveddate" name="certificatereceiveddate"/>
-                            </div>
-                        </form>
+                        <div id="form-wrapper">
+                            <form>
+                                <div>
+                                    <label htmlFor="certificatetitle">Certificate title</label><br/>
+                                    <input onChange={valueChangeCertificatesTitle} value={valueCertificatesTitle} type="text" id="certificatetitle" name="certificatetitle"/>
+                                </div>
+                                <div>
+                                    <label htmlFor="certificateid">Certificate ID</label><br/>
+                                    <input onChange={valueChangeCertificatesId} value={valueCertificatesId} type="text" id="certificateid" name="certificateid"/>
+                                </div>
+                                <div>
+                                    <label htmlFor="certificatereceiveddate">Certificate received date <span>(MM/YYYY)</span></label><br/>
+                                    <input onChange={valueChangeCertificatesDate} value={valueCertificatesDate} type="text" id="certificatereceiveddate" name="certificatereceiveddate"/>
+                                </div>
+                            </form>
+                        </div>
                     </section>
                     <aside id="section-aside">
                         <h1>Notes:</h1>

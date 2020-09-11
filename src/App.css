@@ -150,46 +150,49 @@
     height: 100vh;
 }
 
-#section form {
+#section #form-wrapper {
     padding: .8rem;
     border-radius: .5rem;
     border: 1px solid hsl(0, 0%, 78%);
+}
+
+#section #form-wrapper form {
     width: 26rem;
 }
 
-#section form div {
+#section #form-wrapper form div {
     margin-bottom: 1rem;
 }
-#section form div:last-of-type {
+#section #form-wrapper form div:last-of-type {
     margin-bottom: 0;
 }
 
-#section form div label {
+#section #form-wrapper form div label {
     color: hsl(219, 86%, 57%);
     font-size: 1.05rem;
 }
 
-#section form div label span {
+#section #form-wrapper form div label span {
     color: hsl(0, 0%, 66%);
     font-size: 0.8rem;
 }
 
-#section form div input, #section form div select {
+#section #form-wrapper form div input, #section #form-wrapper form div select {
     margin-top: .4rem;
     width: 100%;
     box-sizing: border-box;
     border: 1px solid hsl(0, 0%, 86%);
     outline: none;
 }
-#section form div input:focus, #section form div select:focus {
+#section #form-wrapper form div input:focus, #section #form-wrapper form div select:focus {
     border: 1px solid hsl(0, 0%, 52%);
 }
 
-#section form div input[type="text"], #section form div select {
+#section #form-wrapper form div input[type="text"], #section #form-wrapper form div select {
     padding: .6rem;
 }
 
-#section form #toggle-button {
+#section #form-wrapper #toggle-button {
     margin-top: 1rem;
     padding: .6rem 1rem;
     background-color: hsl(219, 86%, 57%);
@@ -199,11 +202,11 @@
     border: none;
     cursor: pointer;
 }
-#section form #toggle-button:hover {
+#section #form-wrapper #toggle-button:hover {
     background-color: hsl(219, 86%, 63%);
 }
 
-#section form #toggle-button + p {
+#section #form-wrapper #toggle-button + p {
     margin-top: .35rem;
     color: hsl(0, 0%, 44%);
     font-size: .75rem;

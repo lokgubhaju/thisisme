@@ -26,12 +26,14 @@ function Technologies() {
             <div id="section-wrapper">
                 <div>
                     <section id="section">
-                        <form>
-                            <div>
-                                <label htmlFor="technologies">Technologies I use <span>(comma separated)</span></label><br/>
-                                <input onChange={valueChangeTechnologies} value={valueTechnologies} type="text" id="technologies" name="technologies"/>
-                            </div>
-                        </form>
+                        <div id="form-wrapper">
+                            <form>
+                                <div>
+                                    <label htmlFor="technologies">Technologies I use <span>(comma separated)</span></label><br/>
+                                    <input onChange={valueChangeTechnologies} value={valueTechnologies} type="text" id="technologies" name="technologies"/>
+                                </div>
+                            </form>
+                        </div>
                     </section>
                     <aside id="section-aside">
                         <h1>Notes:</h1>
