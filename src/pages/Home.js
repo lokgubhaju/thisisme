@@ -12,7 +12,7 @@ function Home() {
             </div>
             <ul>
                 <li>This work is under the <a href="https://github.com/JoseDeFreitas/thisisme/blob/master/license">MIT license</a></li>
-                <li><Link to="/i/privacy-policy" exact>Privacy policy</Link></li>
+                <li><Link to="/privacy-policy" exact>Privacy policy</Link></li>
                 <li><a href="https://github.com/JoseDeFreitas/thisisme/blob/master/code-of-conduct.md">Code of conduct</a></li>
                 <li><a href="https://github.com/JoseDeFreitas/thisisme/blob/master/contribute.md">Contribute</a></li>
             </ul>

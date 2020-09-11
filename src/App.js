@@ -27,7 +27,7 @@ function App() {
             <Route exact path="/s/certificates" component={ Certificates }/>
             <Route exact path="/s/social" component={ Social }/>
             <Route exact path="/s/result" component={ Result }/>
-            <Route exact path="/i/privacy-policy" component={ Privacy }/>
+            <Route exact path="/privacy-policy" component={ Privacy }/>
           </Switch>
         </>
       </BrowserRouter>
