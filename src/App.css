@@ -160,6 +160,12 @@
     width: 26rem;
 }
 
+#section #form-wrapper form .currentform-text {
+    font-size: .75rem;
+    margin-bottom: .4rem;
+    color: hsl(51, 100%, 46.1%);
+}
+
 #section #form-wrapper form div {
     margin-bottom: 1rem;
 }
@@ -245,7 +251,7 @@
 }
 
 #preview-text {
-    color: hsl(0, 63.5%, 50.6%);
+    color: hsl(51, 100%, 46.1%);
     font-size: .95rem;
     margin-top: .2rem;
     margin-left: .2rem;
