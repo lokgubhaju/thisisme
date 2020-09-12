@@ -4,8 +4,6 @@ import Navigation from '../components/Navigation';
 import useLocalStorage from '../scripts/localStorageData';
 
 function Personal() {
-    const imgHeight = 194;
-
     const [valuePersonalFullname, setValuePersonalFullname] = useLocalStorage(
         'personalFullnameValueStored'
       );
@@ -30,7 +28,7 @@ function Personal() {
     const personalLanguagesText = (valuePersonalLanguages === '') ? null : <text x="25" y="36"><tspan x="25" y={personalLanguagesPositionTitle} fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Languages I speak</tspan><tspan x="25" y={personalLanguagesPositionText} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valuePersonalLanguages}</tspan></text>;
     const personalHobbiesText = (valuePersonalHobbies === '') ? null : <text x="25" y="36"><tspan x="25" y={personalHobbiesPositionTitle} fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My hobbies</tspan><tspan x="25" y={personalHobbiesPositionText} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valuePersonalHobbies}</tspan></text>;
 
-    //const imgHeight = (valuePersonalHobbies === '') ? 138 : 194;
+    const imgHeight = (valuePersonalFullname === '' && valuePersonalLanguages === '' || valuePersonalFullname === '' && valuePersonalHobbies === '' || valuePersonalLanguages === '' && valuePersonalHobbies === '') ? 82 : (valuePersonalFullname === '' || valuePersonalLanguages === '' || valuePersonalHobbies === '') ? 138 : 194;
 
     const svgImagePersonal = (
         <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,15 +49,15 @@ function Personal() {
                             <form>
                                 <div>
                                     <label htmlFor="fullnameValue">My full name</label><br/>
-                                    <input onChange={valueChangePersonalFullname} value={valuePersonalFullname} type="text" id="fullnameValue" name="fullnameValue"/>
+                                    <input onChange={valueChangePersonalFullname} value={valuePersonalFullname} type="text" id="fullnameValue" name="fullnameValue" minlength="0" maxlength="40"/>
                                 </div>
                                 <div>
                                     <label htmlFor="languagesValue">Languages I speak <span>(comma separated)</span></label><br/>
-                                    <input onChange={valueChangePersonalLanguages} value={valuePersonalLanguages} type="text" id="languagesValue" name="languagesValue"/>
+                                    <input onChange={valueChangePersonalLanguages} value={valuePersonalLanguages} type="text" id="languagesValue" name="languagesValue" minlength="0" maxlength="40"/>
                                 </div>
                                 <div>
                                     <label htmlFor="hobbiesValue">My hobbies <span>(comma separated)</span></label><br/>
-                                    <input onChange={valueChangePersonalHobbies} value={valuePersonalHobbies} type="text" id="hobbiesValue" name="hobbiesValue"/>
+                                    <input onChange={valueChangePersonalHobbies} value={valuePersonalHobbies} type="text" id="hobbiesValue" name="hobbiesValue" minlength="0" maxlength="40"/>
                                 </div>
                             </form>
                         </div>
