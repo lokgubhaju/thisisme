@@ -4,14 +4,14 @@ import Navigation from '../components/Navigation';
 import useLocalStorage from '../scripts/localStorageData';
 
 function Programming() {
-    const imgHeight = 194;
-
     const [valueProgramming, setValueProgramming] = useLocalStorage(
         'programmingValueStored'
       );
     const valueChangeProgramming = event => setValueProgramming(event.target.value);
     
     const programmingText = (valueProgramming === '') ? null : <text x="25" y="36"><tspan x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Programming languages I code in</tspan><tspan x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueProgramming}</tspan></text>;
+
+    const imgHeight = (valueProgramming === '') ? 26 : 82;
 
     const svgImageProgramming = (
         <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">

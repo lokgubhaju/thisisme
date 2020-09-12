@@ -4,8 +4,6 @@ import Navigation from '../components/Navigation';
 import useLocalStorage from '../scripts/localStorageData';
 
 function Education() {
-    const imgHeight = 194;
-
     const [valueEducationName1, setValueEducationName1] = useLocalStorage(
         'educationNameValueStored1'
       );
@@ -71,7 +69,9 @@ function Education() {
     let checkbox = document.getElementById("more-button");
     const texty = (checkbox.checked === true) ? <text x="70" y="36" fill="#0ff" fontFamily="Segoe UI" fontWeight="600" fontSize="14px">OenasPefaseg</text> : null;
     //return texty;
-}*/
+    }*/
+
+    const imgHeight = (educationInnerCard1 === null && educationInnerCard2 === null) ? 62 : 194;
 
     const svgImageEducation = (
         <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">

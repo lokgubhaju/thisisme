@@ -4,8 +4,6 @@ import Navigation from '../components/Navigation';
 import useLocalStorage from '../scripts/localStorageData';
 
 function Job() {
-    const imgHeight = 194;
-
     const [valueJobCompany1, setValueJobCompany1] = useLocalStorage(
         'jobCompanyValueStored1'
       );
@@ -58,6 +56,8 @@ function Job() {
     const jobCompanyText2 = (valueJobCompany2 === '') ? null : <text x="258" y="67"><tspan x="258" y="68" fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Company name</tspan><tspan x="258" y="84" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueJobCompany2}</tspan></text> && (jobInnerCard1 === null) ? <text x="30" y="67"><tspan x="30" y="68" fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Company name</tspan><tspan x="30" y="84" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueJobCompany2}</tspan></text> : <text x="258" y="67"><tspan x="258" y="68" fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Company name</tspan><tspan x="258" y="84" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueJobCompany2}</tspan></text>;
     const jobPositionText2 = (valueJobPosition2 === '') ? null : <text x="258" y="67"><tspan x="258" y={jobPositionPositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Position</tspan><tspan x="258" y={jobPositionPositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueJobPosition2}</tspan></text> && (jobInnerCard1 === null) ? <text x="30" y="67"><tspan x="30" y={jobPositionPositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Position</tspan><tspan x="30" y={jobPositionPositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueJobPosition2}</tspan></text> : <text x="258" y="67"><tspan x="258" y={jobPositionPositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Position</tspan><tspan x="258" y={jobPositionPositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueJobPosition2}</tspan></text>;
     const jobYearsText2 = (valueJobYears2 === '') ? null : <text x="258" y="67"><tspan x="258" y={jobYearsPositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Job years</tspan><tspan x="258" y={jobYearsPositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueJobYears2}</tspan></text> && (jobInnerCard1 === null) ? <text x="30" y="67"><tspan x="30" y={jobYearsPositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Job years</tspan><tspan x="30" y={jobYearsPositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueJobYears2}</tspan></text> : <text x="258" y="67"><tspan x="258" y={jobYearsPositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Job years</tspan><tspan x="258" y={jobYearsPositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueJobYears2}</tspan></text>;
+
+    const imgHeight = (jobInnerCard1 === null && jobInnerCard2 === null) ? 62 : 194;
 
     const svgImageJob = (
         <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
