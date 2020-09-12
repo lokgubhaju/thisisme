@@ -59,10 +59,25 @@ function Education() {
     const educationTitleText2 = (valueEducationTitle2 === '') ? null : <text x="258" y="67"><tspan x="258" y={educationTitlePositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Career title</tspan><tspan x="258" y={educationTitlePositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueEducationTitle2}</tspan></text> && (educationInnerCard1 === null) ? <text x="30" y="67"><tspan x="30" y={educationTitlePositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Career title</tspan><tspan x="30" y={educationTitlePositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueEducationTitle2}</tspan></text> : <text x="258" y="67"><tspan x="258" y={educationTitlePositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Career title</tspan><tspan x="258" y={educationTitlePositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueEducationTitle2}</tspan></text>;
     const educationYearsText2 = (valueEducationYears2 === '') ? null : <text x="258" y="67"><tspan x="258" y={educationYearsPositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Career years</tspan><tspan x="258" y={educationYearsPositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueEducationYears2}</tspan></text> && (educationInnerCard1 === null) ? <text x="30" y="67"><tspan x="30" y={educationYearsPositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Career years</tspan><tspan x="30" y={educationYearsPositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueEducationYears2}</tspan></text> : <text x="258" y="67"><tspan x="258" y={educationYearsPositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Career years</tspan><tspan x="258" y={educationYearsPositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueEducationYears2}</tspan></text>;
 
+    /*const addMoreText = () => {
+        let checkbox = document.getElementById("more-button");
+        if (checkbox.checked === true) {
+            return const asdfg = 8;
+        } else {
+            alert('oka');
+        }
+    }*/
+    /*const asdfg = () => {
+    let checkbox = document.getElementById("more-button");
+    const texty = (checkbox.checked === true) ? <text x="70" y="36" fill="#0ff" fontFamily="Segoe UI" fontWeight="600" fontSize="14px">OenasPefaseg</text> : null;
+    //return texty;
+}*/
+
     const svgImageEducation = (
         <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
             <text x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My education</text>
+            {/*asdfg.texty*/}
             <g>
                 {educationInnerCard1}
                 {educationNameText1}
@@ -126,7 +141,9 @@ function Education() {
                         <div id="form-wrapper">
                             {form ? educationForm2 : educationForm1}
                             <button id="toggle-button" onClick={toggleForm}>Toggle form</button>
-                            <p> each form corresponds to each inner card.</p>
+                            <p>each form corresponds to each inner card.</p>
+                            <input id="more-button" type="checkbox"></input>
+                            <p>check this checkbox to let know people there's more information.</p>
                         </div>
                     </section>
                     <aside id="section-aside">

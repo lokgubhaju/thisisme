@@ -218,6 +218,20 @@
     font-size: .75rem;
 }
 
+#section #form-wrapper #more-button {
+    margin-top: .6rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    cursor: pointer;
+    border-radius: 0%;
+}
+
+#section #form-wrapper #more-button + p {
+    margin-top: .35rem;
+    color: hsl(0, 0%, 44%);
+    font-size: .75rem;
+}
+
 #section-aside {
     padding: .8rem;
     border-radius: .5rem;

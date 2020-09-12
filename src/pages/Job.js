@@ -134,7 +134,7 @@ function Job() {
                     </section>
                     <aside id="section-aside">
                         <h1>Notes:</h1>
-                        <p><span>*</span> all inputs are optional.<br/><span>*</span> add "Present" if necessary (eg. 04/2000-Present).<br/><span>*</span> for information about data, see <Link to="/privacy-policy" exact>Privacy Policy</Link>.</p>
+                        <p><span>*</span> all inputs are optional.<br/><span>*</span> only up to 2 inner cards.<br/><span>*</span> add "Present" if necessary (eg. 04/2000-Present).<br/><span>*</span> for information about data, see <Link to="/privacy-policy" exact>Privacy Policy</Link>.</p>
                     </aside>
                 </div>
                 <div>
