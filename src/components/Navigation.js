@@ -12,7 +12,6 @@ function Navigation() {
                 <li><NavLink to="/s/education" exact activeStyle={{ 'backgroundColor':'hsl(219, 86%, 57%)','color':'hsl(0, 0%, 100%)' }}>Education</NavLink></li>
                 <li><NavLink to="/s/job" exact activeStyle={{ 'backgroundColor':'hsl(219, 86%, 57%)','color':'hsl(0, 0%, 100%)' }}>Job</NavLink></li>
                 <li><NavLink to="/s/certificates" exact activeStyle={{ 'backgroundColor':'hsl(219, 86%, 57%)','color':'hsl(0, 0%, 100%)' }}>Certificates</NavLink></li>
-                <li><NavLink to="/s/social" exact activeStyle={{ 'backgroundColor':'hsl(219, 86%, 57%)','color':'hsl(0, 0%, 100%)' }}>Social</NavLink></li>
                 <li><hr id="separator"/></li>
                 <li><NavLink to="/s/result" exact activeStyle={{ 'backgroundColor':'hsl(125, 75%, 41%)','color':'hsl(0, 0%, 100%)' }}>Result</NavLink></li>
             </ul>

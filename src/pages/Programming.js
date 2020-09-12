@@ -10,7 +10,7 @@ function Programming() {
         'programmingValueStored'
       );
     const valueChangeProgramming = event => setValueProgramming(event.target.value);
-
+    
     const programmingText = (valueProgramming === '') ? null : <text x="25" y="36"><tspan x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Programming languages I code in</tspan><tspan x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueProgramming}</tspan></text>;
 
     const svgImageProgramming = (

@@ -8,7 +8,6 @@ import Technologies from './pages/Technologies';
 import Education from './pages/Education';
 import Job from './pages/Job';
 import Certificates from './pages/Certificates';
-import Social from './pages/Social';
 import Result from './pages/Result';
 import Privacy from './pages/Privacy';
 
@@ -25,7 +24,6 @@ function App() {
             <Route exact path="/s/education" component={ Education }/>
             <Route exact path="/s/job" component={ Job }/>
             <Route exact path="/s/certificates" component={ Certificates }/>
-            <Route exact path="/s/social" component={ Social }/>
             <Route exact path="/s/result" component={ Result }/>
             <Route exact path="/privacy-policy" component={ Privacy }/>
           </Switch>
