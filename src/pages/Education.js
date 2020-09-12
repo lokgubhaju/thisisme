@@ -101,15 +101,15 @@ function Education() {
             <p className="currentform-text">current form: 1</p>
             <div>
                 <label htmlFor="collegename1">College name</label><br/>
-                <input onChange={valueChangeEducationName1} value={valueEducationName1} type="text" id="collegename1" name="collegename1"/>
+                <input onChange={valueChangeEducationName1} value={valueEducationName1} type="text" id="collegename1" name="collegename1" minlength="0" maxlength="40"/>
             </div>
             <div>
                 <label htmlFor="careertitle1">Career title</label><br/>
-                <input onChange={valueChangeEducationTitle1} value={valueEducationTitle1} type="text" id="careertitle1" name="careertitle1"/>
+                <input onChange={valueChangeEducationTitle1} value={valueEducationTitle1} type="text" id="careertitle1" name="careertitle1" minlength="0" maxlength="40"/>
             </div>
             <div>
                 <label htmlFor="careeryears1">Career years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
-                <input onChange={valueChangeEducationYears1} value={valueEducationYears1} type="text" id="careeryears1" name="careeryears1"/>
+                <input onChange={valueChangeEducationYears1} value={valueEducationYears1} type="text" id="careeryears1" name="careeryears1" minlength="0" maxlength="15"/>
             </div>
         </form>
     );
@@ -119,15 +119,15 @@ function Education() {
             <p className="currentform-text">current form: 2</p>
             <div>
                 <label htmlFor="collegename2">College name</label><br/>
-                <input onChange={valueChangeEducationName2} value={valueEducationName2} type="text" id="collegename2" name="collegename2"/>
+                <input onChange={valueChangeEducationName2} value={valueEducationName2} type="text" id="collegename2" name="collegename2" minlength="0" maxlength="40"/>
             </div>
             <div>
                 <label htmlFor="careertitle2">Career title</label><br/>
-                <input onChange={valueChangeEducationTitle2} value={valueEducationTitle2} type="text" id="careertitle2" name="careertitle2"/>
+                <input onChange={valueChangeEducationTitle2} value={valueEducationTitle2} type="text" id="careertitle2" name="careertitle2" minlength="0" maxlength="40"/>
             </div>
             <div>
                 <label htmlFor="careeryears2">Career years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
-                <input onChange={valueChangeEducationYears2} value={valueEducationYears2} type="text" id="careeryears2" name="careeryears2"/>
+                <input onChange={valueChangeEducationYears2} value={valueEducationYears2} type="text" id="careeryears2" name="careeryears2" minlength="0" maxlength="15"/>
             </div>
         </form>
     );

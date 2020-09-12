@@ -30,7 +30,7 @@ function Technologies() {
                             <form>
                                 <div>
                                     <label htmlFor="technologies">Technologies I use <span>(comma separated)</span></label><br/>
-                                    <input onChange={valueChangeTechnologies} value={valueTechnologies} type="text" id="technologies" name="technologies"/>
+                                    <input onChange={valueChangeTechnologies} value={valueTechnologies} type="text" id="technologies" name="technologies" minlength="0" maxlength="50"/>
                                 </div>
                             </form>
                         </div>

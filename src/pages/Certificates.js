@@ -47,15 +47,15 @@ function Certificates() {
                             <form>
                                 <div>
                                     <label htmlFor="certificatetitle">Certificate title</label><br/>
-                                    <input onChange={valueChangeCertificatesTitle} value={valueCertificatesTitle} type="text" id="certificatetitle" name="certificatetitle"/>
+                                    <input onChange={valueChangeCertificatesTitle} value={valueCertificatesTitle} type="text" id="certificatetitle" name="certificatetitle" minlength="0" maxlength="40"/>
                                 </div>
                                 <div>
                                     <label htmlFor="certificateid">Certificate ID</label><br/>
-                                    <input onChange={valueChangeCertificatesId} value={valueCertificatesId} type="text" id="certificateid" name="certificateid"/>
+                                    <input onChange={valueChangeCertificatesId} value={valueCertificatesId} type="text" id="certificateid" name="certificateid" minlength="0" maxlength="40"/>
                                 </div>
                                 <div>
                                     <label htmlFor="certificatereceiveddate">Certificate received date <span>(MM/YYYY)</span></label><br/>
-                                    <input onChange={valueChangeCertificatesDate} value={valueCertificatesDate} type="text" id="certificatereceiveddate" name="certificatereceiveddate"/>
+                                    <input onChange={valueChangeCertificatesDate} value={valueCertificatesDate} type="text" id="certificatereceiveddate" name="certificatereceiveddate" minlength="0" maxlength="7"/>
                                 </div>
                             </form>
                         </div>

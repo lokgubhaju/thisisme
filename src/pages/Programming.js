@@ -30,7 +30,7 @@ function Programming() {
                             <form>
                                 <div>
                                     <label htmlFor="programming">Programming languages I code in <span>(comma separated)</span></label><br/>
-                                    <input onChange={valueChangeProgramming} value={valueProgramming} type="text" id="programming" name="programming"/>
+                                    <input onChange={valueChangeProgramming} value={valueProgramming} type="text" id="programming" name="programming" minlength="0" maxlength="50"/>
                                 </div>
                             </form>
                         </div>
