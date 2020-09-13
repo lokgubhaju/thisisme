@@ -96,7 +96,7 @@ function Job() {
                 <input onChange={valueChangeJobPosition1} value={valueJobPosition1} type="text" id="position" name="position" minlength="0" maxlength="40"/>
             </div>
             <div>
-                <label htmlFor="jobyears">Job years <span>(MM/YYYY-MM/YYYY)</span></label><br/>
+                <label htmlFor="jobyears">Job years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
                 <input onChange={valueChangeJobYears1} value={valueJobYears1} type="text" id="jobyears" name="jobyears" minlength="0" maxlength="15"/>
             </div>
         </form>
@@ -114,7 +114,7 @@ function Job() {
                 <input onChange={valueChangeJobPosition2} value={valueJobPosition2} type="text" id="position" name="position" minlength="0" maxlength="40"/>
             </div>
             <div>
-                <label htmlFor="jobyears">Job years <span>(MM/YYYY-MM/YYYY)</span></label><br/>
+                <label htmlFor="jobyears">Job years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
                 <input onChange={valueChangeJobYears2} value={valueJobYears2} type="text" id="jobyears" name="jobyears" minlength="0" maxlength="15"/>
             </div>
         </form>
