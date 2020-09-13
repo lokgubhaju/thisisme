@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 function Home() {
     return (
         <header id="header">
+            <a id="version-text" href="https://github.com/JoseDeFreitas/thisisme/releases" target="_blank">v1.0</a>
             <h1>thisisme</h1>
             <p>Create cool images containing useful<br/>information about you and your work<br/>for your GitHub readme</p>
             <div id="cta-buttons">

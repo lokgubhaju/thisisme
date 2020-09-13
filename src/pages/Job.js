@@ -57,12 +57,14 @@ function Job() {
     const jobPositionText2 = (valueJobPosition2 === '') ? null : <text x="258" y="67"><tspan x="258" y={jobPositionPositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Position</tspan><tspan x="258" y={jobPositionPositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueJobPosition2}</tspan></text> && (jobInnerCard1 === null) ? <text x="30" y="67"><tspan x="30" y={jobPositionPositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Position</tspan><tspan x="30" y={jobPositionPositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueJobPosition2}</tspan></text> : <text x="258" y="67"><tspan x="258" y={jobPositionPositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Position</tspan><tspan x="258" y={jobPositionPositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueJobPosition2}</tspan></text>;
     const jobYearsText2 = (valueJobYears2 === '') ? null : <text x="258" y="67"><tspan x="258" y={jobYearsPositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Job years</tspan><tspan x="258" y={jobYearsPositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueJobYears2}</tspan></text> && (jobInnerCard1 === null) ? <text x="30" y="67"><tspan x="30" y={jobYearsPositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Job years</tspan><tspan x="30" y={jobYearsPositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueJobYears2}</tspan></text> : <text x="258" y="67"><tspan x="258" y={jobYearsPositionTitle2} fill="#333" fontFamily="Segoe UI" fontWeight="700" fontSize="11px">Job years</tspan><tspan x="258" y={jobYearsPositionText2} fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="12px">{valueJobYears2}</tspan></text>;
 
-    const imgHeight = (jobInnerCard1 === null && jobInnerCard2 === null) ? 62 : 194;
+    const headerTextJob = (jobInnerCard1 === null && jobInnerCard2 === null) ? null : <text x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My job experience</text>
+
+    const imgHeight = (jobInnerCard1 === null && jobInnerCard2 === null) ? 26 : 194;
 
     const svgImageJob = (
         <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
-            <text x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My job experience</text>
+            {headerTextJob}
             <g>
                 {jobInnerCard1}
                 {jobCompanyText1}
@@ -75,9 +77,6 @@ function Job() {
                 {jobPositionText2}
                 {jobYearsText2}
             </g>
-            {/*<rect x="25" y="52" width="140px" height="118px" rx="4.5" fill="#FAFBFC" stroke="#E4E2E2"/>
-            <rect x="175" y="52" width="140px" height="118px" rx="4.5" fill="#FAFBFC" stroke="#E4E2E2"/>
-            <rect x="325" y="52" width="140px" height="118px" rx="4.5" fill="#FAFBFC" stroke="#E4E2E2"/>*/}
          </svg>
     );
 
@@ -89,11 +88,11 @@ function Job() {
             <p className="currentform-text">current form: 1</p>
             <div>
                 <label htmlFor="companyname">Company name</label><br/>
-                <input onChange={valueChangeJobCompany1} value={valueJobCompany1} type="text" id="companyname" name="companyname" minlength="0" maxlength="40"/>
+                <input onChange={valueChangeJobCompany1} value={valueJobCompany1} type="text" id="companyname" name="companyname" minlength="0" maxlength="30"/>
             </div>
             <div>
                 <label htmlFor="position">Position</label><br/>
-                <input onChange={valueChangeJobPosition1} value={valueJobPosition1} type="text" id="position" name="position" minlength="0" maxlength="40"/>
+                <input onChange={valueChangeJobPosition1} value={valueJobPosition1} type="text" id="position" name="position" minlength="0" maxlength="30"/>
             </div>
             <div>
                 <label htmlFor="jobyears">Job years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
@@ -107,11 +106,11 @@ function Job() {
             <p className="currentform-text">current form: 2</p>
             <div>
                 <label htmlFor="companyname">Company name</label><br/>
-                <input onChange={valueChangeJobCompany2} value={valueJobCompany2} type="text" id="companyname" name="companyname" minlength="0" maxlength="40"/>
+                <input onChange={valueChangeJobCompany2} value={valueJobCompany2} type="text" id="companyname" name="companyname" minlength="0" maxlength="30"/>
             </div>
             <div>
                 <label htmlFor="position">Position</label><br/>
-                <input onChange={valueChangeJobPosition2} value={valueJobPosition2} type="text" id="position" name="position" minlength="0" maxlength="40"/>
+                <input onChange={valueChangeJobPosition2} value={valueJobPosition2} type="text" id="position" name="position" minlength="0" maxlength="30"/>
             </div>
             <div>
                 <label htmlFor="jobyears">Job years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>

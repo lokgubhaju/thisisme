@@ -73,15 +73,17 @@ function Education() {
     const texty = (checkbox.checked === true) ? <text x="70" y="36" fill="#0ff" fontFamily="Segoe UI" fontWeight="600" fontSize="14px">OenasPefaseg</text> : null;
     //return texty;
     }*/
-
+    
     //const educationTextMore = (checkbox.checked === true) ? <text x="70" y="36" fill="#0ff" fontFamily="Segoe UI" fontWeight="600" fontSize="14px">{asdfg}</text> : null;
 
-    const imgHeight = (educationInnerCard1 === null && educationInnerCard2 === null) ? 62 : 194;
+    const headerTextEducation = (educationInnerCard1 === null && educationInnerCard2 === null) ? null : <text x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My education</text>
+
+    const imgHeight = (educationInnerCard1 === null && educationInnerCard2 === null) ? 26 : 194;
 
     const svgImageEducation = (
         <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
-            <text x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">My education</text>
+            {headerTextEducation}
             {/*(addTextMore = () => asdfg == true) ? <text x="70" y="36" fill="#0ff" fontFamily="Segoe UI" fontWeight="600" fontSize="14px">OenasPefaseg</text> : null*/}
             <g>
                 {educationInnerCard1}
@@ -106,11 +108,11 @@ function Education() {
             <p className="currentform-text">current form: 1</p>
             <div>
                 <label htmlFor="collegename1">College name</label><br/>
-                <input onChange={valueChangeEducationName1} value={valueEducationName1} type="text" id="collegename1" name="collegename1" minlength="0" maxlength="40"/>
+                <input onChange={valueChangeEducationName1} value={valueEducationName1} type="text" id="collegename1" name="collegename1" minlength="0" maxlength="30"/>
             </div>
             <div>
                 <label htmlFor="careertitle1">Career title</label><br/>
-                <input onChange={valueChangeEducationTitle1} value={valueEducationTitle1} type="text" id="careertitle1" name="careertitle1" minlength="0" maxlength="40"/>
+                <input onChange={valueChangeEducationTitle1} value={valueEducationTitle1} type="text" id="careertitle1" name="careertitle1" minlength="0" maxlength="30"/>
             </div>
             <div>
                 <label htmlFor="careeryears1">Career years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
@@ -124,11 +126,11 @@ function Education() {
             <p className="currentform-text">current form: 2</p>
             <div>
                 <label htmlFor="collegename2">College name</label><br/>
-                <input onChange={valueChangeEducationName2} value={valueEducationName2} type="text" id="collegename2" name="collegename2" minlength="0" maxlength="40"/>
+                <input onChange={valueChangeEducationName2} value={valueEducationName2} type="text" id="collegename2" name="collegename2" minlength="0" maxlength="30"/>
             </div>
             <div>
                 <label htmlFor="careertitle2">Career title</label><br/>
-                <input onChange={valueChangeEducationTitle2} value={valueEducationTitle2} type="text" id="careertitle2" name="careertitle2" minlength="0" maxlength="40"/>
+                <input onChange={valueChangeEducationTitle2} value={valueEducationTitle2} type="text" id="careertitle2" name="careertitle2" minlength="0" maxlength="30"/>
             </div>
             <div>
                 <label htmlFor="careeryears2">Career years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
