@@ -150,7 +150,7 @@ function Education() {
                             <button id="toggle-button" onClick={toggleForm}>Toggle form</button>
                             <p>each form corresponds to each inner card.</p>
                             <input id="more-button" type="checkbox"></input>
-                            <p>check this checkbox to let know people there's more information.</p>
+                            <p>check this checkbox to let people know there's more information.</p>
                         </div>
                     </section>
                     <aside id="section-aside">

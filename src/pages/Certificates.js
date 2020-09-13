@@ -6,24 +6,24 @@ import useLocalStorage from '../scripts/localStorageData';
 function Certificates() {
     const imgHeight = 194;
 
-    const [valueCertificatesTitle, setValueCertificatesTitle] = useLocalStorage(
-        'certificatesTitleValueStored'
+    const [valueCertificatesTitle1, setValueCertificatesTitle1] = useLocalStorage(
+        'certificatesTitleValueStored1'
       );
-    const valueChangeCertificatesTitle = event => setValueCertificatesTitle(event.target.value);
+    const valueChangeCertificatesTitle1 = event => setValueCertificatesTitle1(event.target.value);
 
-    const [valueCertificatesId, setValueCertificatesId] = useLocalStorage(
-        'certificatesIdValueStored'
+    const [valueCertificatesId1, setValueCertificatesId1] = useLocalStorage(
+        'certificatesIdValueStored1'
       );
-    const valueChangeCertificatesId = event => setValueCertificatesId(event.target.value);
+    const valueChangeCertificatesId1 = event => setValueCertificatesId1(event.target.value);
 
-    const [valueCertificatesDate, setValueCertificatesDate] = useLocalStorage(
-        'certificatesDateValueStored'
+    const [valueCertificatesDate1, setValueCertificatesDate1] = useLocalStorage(
+        'certificatesDateValueStored1'
       );
-    const valueChangeCertificatesDate = event => setValueCertificatesDate(event.target.value);
+    const valueChangeCertificatesDate1 = event => setValueCertificatesDate1(event.target.value);
 
-    const certificatesTitleText = (valueCertificatesTitle === '') ? null : <text x="25" y="36"><tspan x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Certificate title</tspan><tspan x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueCertificatesTitle}</tspan></text>;
-    const certificatesIdText = (valueCertificatesId === '') ? null : <text x="25" y="36"><tspan x="25" y="90" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Certificate ID</tspan><tspan x="25" y="114" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueCertificatesId}</tspan></text>;
-    const certificatesDateText = (valueCertificatesDate === '') ? null : <text x="25" y="36"><tspan x="25" y="144" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Certificate received date</tspan><tspan x="25" y="168" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueCertificatesDate}</tspan></text>;
+    const certificatesTitleText1 = (valueCertificatesTitle1 === '') ? null : <text x="25" y="36"><tspan x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Certificate title</tspan><tspan x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueCertificatesTitle1}</tspan></text>;
+    const certificatesIdText1 = (valueCertificatesId1 === '') ? null : <text x="25" y="36"><tspan x="25" y="90" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Certificate ID</tspan><tspan x="25" y="114" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueCertificatesId1}</tspan></text>;
+    const certificatesDateText1 = (valueCertificatesDate1 === '') ? null : <text x="25" y="36"><tspan x="25" y="144" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Certificate received date</tspan><tspan x="25" y="168" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueCertificatesDate1}</tspan></text>;
 
     const svgImageCertificates = (
         <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,9 +31,9 @@ function Certificates() {
             <rect x="25" y="52" width="140px" height="118px" rx="4.5" fill="#FAFBFC" stroke="#E4E2E2"/>
             <rect x="175" y="52" width="140px" height="118px" rx="4.5" fill="#FAFBFC" stroke="#E4E2E2"/>
             <rect x="325" y="52" width="140px" height="118px" rx="4.5" fill="#FAFBFC" stroke="#E4E2E2"/>
-            {certificatesTitleText}
-            {certificatesIdText}
-            {certificatesDateText}
+            {certificatesTitleText1}
+            {certificatesIdText1}
+            {certificatesDateText1}
          </svg>
     );
 
@@ -47,15 +47,15 @@ function Certificates() {
                             <form>
                                 <div>
                                     <label htmlFor="certificatetitle">Certificate title</label><br/>
-                                    <input onChange={valueChangeCertificatesTitle} value={valueCertificatesTitle} type="text" id="certificatetitle" name="certificatetitle" minlength="0" maxlength="40"/>
+                                    <input onChange={valueChangeCertificatesTitle1} value={valueCertificatesTitle1} type="text" id="certificatetitle" name="certificatetitle" minlength="0" maxlength="40"/>
                                 </div>
                                 <div>
                                     <label htmlFor="certificateid">Certificate ID</label><br/>
-                                    <input onChange={valueChangeCertificatesId} value={valueCertificatesId} type="text" id="certificateid" name="certificateid" minlength="0" maxlength="40"/>
+                                    <input onChange={valueChangeCertificatesId1} value={valueCertificatesId1} type="text" id="certificateid" name="certificateid" minlength="0" maxlength="40"/>
                                 </div>
                                 <div>
                                     <label htmlFor="certificatereceiveddate">Certificate received date <span>(MM/YYYY)</span></label><br/>
-                                    <input onChange={valueChangeCertificatesDate} value={valueCertificatesDate} type="text" id="certificatereceiveddate" name="certificatereceiveddate" minlength="0" maxlength="7"/>
+                                    <input onChange={valueChangeCertificatesDate1} value={valueCertificatesDate1} type="text" id="certificatereceiveddate" name="certificatereceiveddate" minlength="0" maxlength="7"/>
                                 </div>
                             </form>
                         </div>
