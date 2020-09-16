@@ -1,12 +1,13 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
+import { SvgImageProgramming } from './Programming';
 
 function Result() {
     return (
         <>
             <Navigation/>
-            <section className="section">
-                <h1>Result</h1>
+            <section id="section">
+                <SvgImageProgramming/>
             </section>
         </>
     );
