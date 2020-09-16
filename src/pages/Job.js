@@ -87,16 +87,16 @@ function Job() {
         <form>
             <p className="currentform-text">current form: 1</p>
             <div>
-                <label htmlFor="companyname">Company name</label><br/>
-                <input onChange={valueChangeJobCompany1} value={valueJobCompany1} type="text" id="companyname" name="companyname" minlength="0" maxlength="30"/>
+                <label htmlFor="companyname1">Company name</label><br/>
+                <input onChange={valueChangeJobCompany1} value={valueJobCompany1} type="text" id="companyname1" name="companyname1" minlength="0" maxlength="30"/>
             </div>
             <div>
-                <label htmlFor="position">Position</label><br/>
-                <input onChange={valueChangeJobPosition1} value={valueJobPosition1} type="text" id="position" name="position" minlength="0" maxlength="30"/>
+                <label htmlFor="position1">Position</label><br/>
+                <input onChange={valueChangeJobPosition1} value={valueJobPosition1} type="text" id="position1" name="position1" minlength="0" maxlength="30"/>
             </div>
             <div>
-                <label htmlFor="jobyears">Job years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
-                <input onChange={valueChangeJobYears1} value={valueJobYears1} type="text" id="jobyears" name="jobyears" minlength="0" maxlength="15"/>
+                <label htmlFor="jobyears1">Job years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
+                <input onChange={valueChangeJobYears1} value={valueJobYears1} type="text" id="jobyears1" name="jobyears1" minlength="0" maxlength="15"/>
             </div>
         </form>
     );
@@ -105,16 +105,16 @@ function Job() {
         <form>
             <p className="currentform-text">current form: 2</p>
             <div>
-                <label htmlFor="companyname">Company name</label><br/>
-                <input onChange={valueChangeJobCompany2} value={valueJobCompany2} type="text" id="companyname" name="companyname" minlength="0" maxlength="30"/>
+                <label htmlFor="companyname2">Company name</label><br/>
+                <input onChange={valueChangeJobCompany2} value={valueJobCompany2} type="text" id="companyname2" name="companyname2" minlength="0" maxlength="30"/>
             </div>
             <div>
-                <label htmlFor="position">Position</label><br/>
-                <input onChange={valueChangeJobPosition2} value={valueJobPosition2} type="text" id="position" name="position" minlength="0" maxlength="30"/>
+                <label htmlFor="position2">Position</label><br/>
+                <input onChange={valueChangeJobPosition2} value={valueJobPosition2} type="text" id="position2" name="position2" minlength="0" maxlength="30"/>
             </div>
             <div>
-                <label htmlFor="jobyears">Job years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
-                <input onChange={valueChangeJobYears2} value={valueJobYears2} type="text" id="jobyears" name="jobyears" minlength="0" maxlength="15"/>
+                <label htmlFor="jobyears2">Job years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
+                <input onChange={valueChangeJobYears2} value={valueJobYears2} type="text" id="jobyears2" name="jobyears2" minlength="0" maxlength="15"/>
             </div>
         </form>
     );
