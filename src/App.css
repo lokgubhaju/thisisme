@@ -170,7 +170,7 @@
 #section #form-wrapper form .currentform-text {
     font-size: .75rem;
     margin-bottom: .4rem;
-    color: hsl(51, 100%, 46.1%);
+    color: hsl(29, 72.2%, 49%);
 }
 
 #section #form-wrapper form div {
@@ -219,24 +219,22 @@
     background-color: hsl(219, 86%, 63%);
 }
 
-#section #form-wrapper #toggle-button + p {
-    margin-top: .35rem;
-    color: hsl(0, 0%, 44%);
-    font-size: .75rem;
-}
-
 #section #form-wrapper #more-button {
-    margin-top: .6rem;
-    width: 1.2rem;
-    height: 1.2rem;
+    margin-top: 1.32rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    float: right;
     cursor: pointer;
     border-radius: 0%;
 }
 
-#section #form-wrapper #more-button + p {
+#section #form-wrapper p {
     margin-top: .35rem;
     color: hsl(0, 0%, 44%);
     font-size: .75rem;
+}
+#section #form-wrapper p:last-of-type {
+    margin-top: 0;
 }
 
 #section-aside {
@@ -272,7 +270,7 @@
 }
 
 #preview-text {
-    color: hsl(51, 100%, 46.1%);
+    color: hsl(29, 72.2%, 49%);
     font-size: .95rem;
     margin-top: .2rem;
     margin-left: .2rem;

@@ -61,10 +61,14 @@ function Job() {
 
     const imgHeight = (jobInnerCard1 === null && jobInnerCard2 === null) ? 26 : 194;
 
+    const [checked, setChecked] = useState(false);
+    const jobTextMore = (checked === true) ? <text x="420" y="44" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="700" fontSize="12px">+ more</text> : null;
+
     const svgImageJob = (
         <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
             {headerTextJob}
+            {jobTextMore}
             <g>
                 {jobInnerCard1}
                 {jobCompanyText1}
@@ -128,7 +132,9 @@ function Job() {
                         <div id="form-wrapper">
                             {form ? jobForm2 : jobForm1}
                             <button id="toggle-button" onClick={toggleForm}>Toggle form</button>
-                            <p> each form corresponds to each inner card.</p>
+                            <input id="more-button" type="checkbox" onChange={() => setChecked(!checked)}></input>
+                            <p>each form corresponds to each inner card.</p>
+                            <p>check the checkbox to let people know there's more information.</p>
                         </div>
                     </section>
                     <aside id="section-aside">
