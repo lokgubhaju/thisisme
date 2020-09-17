@@ -10,8 +10,6 @@ const SvgImageProgramming = ({programmingText, imgHeight}) => (
     </svg>
 );
 
-export { SvgImageProgramming }
-
 function Programming() {
     const [valueProgramming, setValueProgramming] = useLocalStorage(
         'programmingValueStored'
@@ -52,3 +50,5 @@ function Programming() {
 }
 
 export default Programming;
+export {programmingText, imgHeight}
+export { SvgImageProgramming }
