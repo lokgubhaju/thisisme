@@ -3,6 +3,13 @@ import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import useLocalStorage from '../scripts/localStorageData';
 
+const svgImageTechnologies = (technologiesValue, imgHeight) => (
+    <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
+        {technologiesValue}
+    </svg>
+);
+
 function Technologies() {
     const [valueTechnologies, setValueTechnologies] = useLocalStorage(
         'technologiesValueStored'
@@ -12,13 +19,6 @@ function Technologies() {
     const technologiesValue = (valueTechnologies === '') ? null : <text x="25" y="36"><tspan x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Technologies I use</tspan><tspan x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueTechnologies}</tspan></text>;
 
     const imgHeight = (valueTechnologies === '') ? 26 : 82;
-
-    const svgImageTechnologies = (
-        <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
-            {technologiesValue}
-        </svg>
-    );
 
     return (
         <>
@@ -41,7 +41,7 @@ function Technologies() {
                     </aside>
                 </div>
                 <div>
-                    {svgImageTechnologies}
+                    {svgImageTechnologies(technologiesValue, imgHeight)}
                     <p id="preview-text">preview <span>- you can edit the layout in the <Link to="/s/result" exact>Result</Link> section.</span></p>
                 </div>
             </div>
