@@ -15,10 +15,10 @@ function Programming() {
     const imgHeight = (valueProgramming === '') ? 26 : 82;
 
     const svgImageProgramming = (
-        <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
+        <g>
+            <rect x="0.5" y="0.5" width="494" height={imgHeight - 1} rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
             {programmingText}
-        </svg>
+        </g>
     );
 
     const svgImageProgrammingString = renderToString(svgImageProgramming)
@@ -45,7 +45,9 @@ function Programming() {
                     </aside>
                 </div>
                 <div>
-                    {svgImageProgramming}
+                    <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
+                        {svgImageProgramming}
+                    </svg>
                     <p id="preview-text">preview <span>- you can edit the layout in the <Link to="/s/result" exact>Result</Link> section.</span></p>
                 </div>
             </div>
