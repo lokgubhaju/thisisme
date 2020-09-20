@@ -15,24 +15,24 @@ You don't know how to start? Read this quick guide to learn how:
   <h3>Opening an issue:</h3>
   <h5>Please, read the whole document to know when to open an issue.</h5>
   <ol>
-    <li>Go to the <a href="https://github.com/JoseDeFreitas/thisisme/issues">Issues section</a> and click on the "New issue" button.</li>
-    <li>Choose an Issue template and follow along. If you don't see any template that matches your request, just click on "<a href="https://github.com/JoseDeFreitas/thisisme/issues/new">Open a blank issue</a>".</li>
+    <li>Go to the <a href="https://github.com/JoseDeFreitas/thisisme/issues">Issues section</a> and click on the "New issue" button.<br/><img src="./assets/guide/issue-guide-image_1.png"/></li>
+    <li>Choose an Issue template and follow along. If you don't see any template that matches your request, just click on "<a href="https://github.com/JoseDeFreitas/thisisme/issues/new">Open a blank issue</a>".<br/><img src="./assets/guide/issue-guide-image_2.png"/></li>
     <li>Select an Issue title that corresponds to the content of the issue.</li>
     <li>Explain you issue! You can make use of the markdown system to make it look great.</li>
-    <li>When ready, click on the "Submit new issue" button and... you've finished!</li>
+    <li>When ready, click on the "Submit new issue" button and... you've finished!<br/><img src="./assets/guide/issue-guide-image_3.png"/></li>
   </ol>
   <p>You can go to the <a href="https://github.com/JoseDeFreitas/thisisme/issues">Issues section</a> to see examples of issues. Those with the "<a href="https://github.com/JoseDeFreitas/thisisme/labels/good%20first%20issue">good first issue</a>" label are good examples you can follow.</p>
   <h3>Creating a pull request:</h3>
   <h5>Please, read the whole document to know when to open a pull request.</h5>
   <ol>
-    <li>Fork the repository. <em>If you're in an organization, you may want to fork in just in your own account</em>.</li>
-    <li>Create a new branch. Name it accordingly to the thing you'll add/delete/edit.<br/>When using the command line, type: <code>git checkout -b "NAME_OF_BRANCH"</code>. This will create a branch called that name and switching you to it directly.</li>
+    <li>Fork the repository. <em>If you're in an organization, you may want to fork it just in your own account</em>.<br/><img src="./assets/guide/pr-guide-image_1.png"/><br/><img src="./assets/guide/pr-guide-image_2.png"/></li>
+    <li>Create a new branch in the fork you've created. Name it accordingly to the thing you'll add/delete/edit.<br/><img src="./assets/guide/pr-guide-image_3.png"/><br/>When using the command line, type: <code>git checkout -b "NAME_OF_BRANCH"</code>. This will create a branch called that name and switching you to it directly.</li>
     <li>Work on the thing you want to <strong>in the branch you've just created</strong>. You may only want to work in the <a href="https://github.com/JoseDeFreitas/thisisme/tree/main/src">src folder</a> or any document file. Please be carefull about what you edit.</li>
-    <li>Stage the changes, commit them and (optionally) push them.<br/>If you're not working remotely, you may not need to push the changes.<br/>If you're using the command line, do this: <code>git add .</code> - to add to stage all the files you edited. <code>git commit -m "TITLE OF YOUR COMMIT"</code> - to commit your changes. Add a comment according to the changes you made. If you want to add aditional comments, do: <code>git commit -m "TITLE OF YOUR COMMIT" -m "ADDITIONAL COMMENTS"</code>. <code>git push</code> to push your changes to the branch you've created (if you're working remotely).</li>
-    <li>Go to the <a href="https://github.com/JoseDeFreitas/thisisme/pulls">thisisme repository Pull requests section</a>, click on the "New pull request" button, then click on "compare across folks". After that, select your repository and the branch you've created using the third (repository) and the fourth (branch) inputs (the ones that are on the right-hand side of the arrow ("<-") icon). Then, click on "Create pull request".</li>
+    <li>Stage the changes, commit them and (optionally) push them.<br/>If you're not working remotely, you may not need to push the changes.<br/>If you're using the command line, do this: <code>git add .</code> - to add to stage all the files you edited. <code>git commit -m "TITLE OF YOUR COMMIT"</code> - to commit your changes. Add a comment according to the changes you made. If you want to add aditional comments, do: <code>git commit -m "TITLE OF YOUR COMMIT" -m "ADDITIONAL COMMENTS"</code>. <code>git push</code> - to push your changes to the branch you've created (if you're working remotely.)</li>
+    <li>Go to the <a href="https://github.com/JoseDeFreitas/thisisme/pulls">thisisme repository Pull requests section</a> and click on the "New pull request" button. After that, click on "compare across folks", select the fork you've created and the branch you've created in the fork using the third (repository) and the fourth (branch) inputs (the ones that are on the right-hand side of the arrow ("<-") icon). Then, click on "Create pull request".<br/><img src="./assets/guide/pr-guide-image_4.png"/><br/><img src="./assets/guide/pr-guide-image_5.png"/></li>
     <li>Select a Pull request title that corresponds to the content of the pull request.</li>
     <li>Make a detailed explanation of the changes you've made. You can make use of the markdown system to make it look great.</li>
-    <li>When ready, click on the "Create pull request" button and... you've finished! <em>The pull request needs to pass the Vercel check. You don't need to do anything, just close the page and it will automatically function</em>.</li>
+    <li>When ready, click on the "Create pull request" button and... you've finished! <em>The pull request needs to pass the Vercel check. You don't need to do anything, just close the page and it will automatically function</em>.<br/><img src="./assets/guide/pr-guide-image_6.png"/></li>
   </ol>
 </details>
 
