@@ -1,14 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { renderToString } from 'react-dom/server';
 import Navigation from '../components/Navigation';
 import useLocalStorage from '../scripts/localStorageData';
-
-const svgImageProgramming = (programmingText, imgHeight) => (
-    <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
-        {programmingText}
-    </svg>
-);
 
 function Programming() {
     const [valueProgramming, setValueProgramming] = useLocalStorage(
@@ -20,6 +14,16 @@ function Programming() {
 
     const imgHeight = (valueProgramming === '') ? 26 : 82;
 
+    const svgImageProgramming = (
+        <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="0.5" width="99%" height="99%" rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
+            {programmingText}
+        </svg>
+    );
+
+    const svgImageProgrammingString = renderToString(svgImageProgramming)
+    localStorage.setItem('svgImageProgrammingStored', svgImageProgrammingString)
+    
     return (
         <>
             <Navigation/>
@@ -41,7 +45,7 @@ function Programming() {
                     </aside>
                 </div>
                 <div>
-                    {svgImageProgramming(programmingText, imgHeight)}
+                    {svgImageProgramming}
                     <p id="preview-text">preview <span>- you can edit the layout in the <Link to="/s/result" exact>Result</Link> section.</span></p>
                 </div>
             </div>
