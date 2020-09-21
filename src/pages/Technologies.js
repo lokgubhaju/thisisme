@@ -14,16 +14,16 @@ function Technologies() {
 
     const imgHeight = (valueTechnologies === '') ? 26 : 82;
 
+    /*const location = useLocation();
+    const currentPath = location.pathname;
+    const technologiesPositionByLocation = (currentPath == '/s/technologies') ? "0.5" : "50";*/
+
     const svgImageTechnologies = (
         <g>
             <rect x="0.5" y="0.5" width="494" height={imgHeight - 1} rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
             {technologiesValue}
         </g>
     );
-
-    const location = useLocation();
-    const currentPath = location.pathname;
-    console.log(currentPath);
 
     const svgImageTechnologiesString = renderToString(svgImageTechnologies)
     localStorage.setItem('svgImageTechnologiesStored', svgImageTechnologiesString)
