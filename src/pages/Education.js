@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 import useLocalStorage from '../scripts/localStorageData';
@@ -6,17 +6,17 @@ import useLocalStorage from '../scripts/localStorageData';
 function Education() {
     const [valueEducationName1, setValueEducationName1] = useLocalStorage(
         'educationNameValueStored1'
-      );
+    );
     const valueChangeEducationName1 = event => setValueEducationName1(event.target.value);
 
     const [valueEducationTitle1, setValueEducationTitle1] = useLocalStorage(
         'educationTitleValueStored1'
-      );
+    );
     const valueChangeEducationTitle1 = event => setValueEducationTitle1(event.target.value);
 
     const [valueEducationYears1, setValueEducationYears1] = useLocalStorage(
         'educationYearsValueStored1'
-      );
+    );
     const valueChangeEducationYears1 = event => setValueEducationYears1(event.target.value);
 
     const educationTitlePositionTitle1 = (valueEducationName1 === '') ? 68 : 106;
@@ -32,17 +32,17 @@ function Education() {
 
     const [valueEducationName2, setValueEducationName2] = useLocalStorage(
         'educationNameValueStored2'
-      );
+    );
     const valueChangeEducationName2 = event => setValueEducationName2(event.target.value);
 
     const [valueEducationTitle2, setValueEducationTitle2] = useLocalStorage(
         'educationTitleValueStored2'
-      );
+    );
     const valueChangeEducationTitle2 = event => setValueEducationTitle2(event.target.value);
 
     const [valueEducationYears2, setValueEducationYears2] = useLocalStorage(
         'educationYearsValueStored2'
-      );
+    );
     const valueChangeEducationYears2 = event => setValueEducationYears2(event.target.value);
 
     const educationTitlePositionTitle2 = (valueEducationName2 === '') ? 68 : 106;
@@ -92,15 +92,15 @@ function Education() {
             <p className="currentform-text">current form: 1</p>
             <div>
                 <label htmlFor="collegename1">College name</label><br/>
-                <input onChange={valueChangeEducationName1} value={valueEducationName1} type="text" id="collegename1" name="collegename1" minlength="0" maxlength="30"/>
+                <input onChange={valueChangeEducationName1} value={valueEducationName1} type="text" id="collegename1" name="collegename1" minLength="0" maxLength="30"/>
             </div>
             <div>
                 <label htmlFor="careertitle1">Career title</label><br/>
-                <input onChange={valueChangeEducationTitle1} value={valueEducationTitle1} type="text" id="careertitle1" name="careertitle1" minlength="0" maxlength="30"/>
+                <input onChange={valueChangeEducationTitle1} value={valueEducationTitle1} type="text" id="careertitle1" name="careertitle1" minLength="0" maxLength="30"/>
             </div>
             <div>
                 <label htmlFor="careeryears1">Career years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
-                <input onChange={valueChangeEducationYears1} value={valueEducationYears1} type="text" id="careeryears1" name="careeryears1" minlength="0" maxlength="15"/>
+                <input onChange={valueChangeEducationYears1} value={valueEducationYears1} type="text" id="careeryears1" name="careeryears1" minLength="0" maxLength="15"/>
             </div>
         </form>
     );
@@ -110,15 +110,15 @@ function Education() {
             <p className="currentform-text">current form: 2</p>
             <div>
                 <label htmlFor="collegename2">College name</label><br/>
-                <input onChange={valueChangeEducationName2} value={valueEducationName2} type="text" id="collegename2" name="collegename2" minlength="0" maxlength="30"/>
+                <input onChange={valueChangeEducationName2} value={valueEducationName2} type="text" id="collegename2" name="collegename2" minLength="0" maxLength="30"/>
             </div>
             <div>
                 <label htmlFor="careertitle2">Career title</label><br/>
-                <input onChange={valueChangeEducationTitle2} value={valueEducationTitle2} type="text" id="careertitle2" name="careertitle2" minlength="0" maxlength="30"/>
+                <input onChange={valueChangeEducationTitle2} value={valueEducationTitle2} type="text" id="careertitle2" name="careertitle2" minLength="0" maxLength="30"/>
             </div>
             <div>
                 <label htmlFor="careeryears2">Career years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
-                <input onChange={valueChangeEducationYears2} value={valueEducationYears2} type="text" id="careeryears2" name="careeryears2" minlength="0" maxlength="15"/>
+                <input onChange={valueChangeEducationYears2} value={valueEducationYears2} type="text" id="careeryears2" name="careeryears2" minLength="0" maxLength="15"/>
             </div>
         </form>
     );

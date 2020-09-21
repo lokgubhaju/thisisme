@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { renderToString } from 'react-dom/server';
 import Navigation from '../components/Navigation';
 import useLocalStorage from '../scripts/localStorageData';
@@ -7,7 +7,7 @@ import useLocalStorage from '../scripts/localStorageData';
 function Technologies() {
     const [valueTechnologies, setValueTechnologies] = useLocalStorage(
         'technologiesValueStored'
-      );
+    );
     const valueChangeTechnologies = event => setValueTechnologies(event.target.value);
 
     const technologiesValue = (valueTechnologies === '') ? null : <text x="25" y="36"><tspan x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Technologies I use</tspan><tspan x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueTechnologies}</tspan></text>;
@@ -20,6 +20,10 @@ function Technologies() {
             {technologiesValue}
         </g>
     );
+
+    const location = useLocation();
+    const currentPath = location.pathname;
+    console.log(currentPath);
 
     const svgImageTechnologiesString = renderToString(svgImageTechnologies)
     localStorage.setItem('svgImageTechnologiesStored', svgImageTechnologiesString)
@@ -34,7 +38,7 @@ function Technologies() {
                             <form>
                                 <div>
                                     <label htmlFor="technologies">Technologies I use <span>(comma separated)</span></label><br/>
-                                    <input onChange={valueChangeTechnologies} value={valueTechnologies} type="text" id="technologies" name="technologies" minlength="0" maxlength="50"/>
+                                    <input onChange={valueChangeTechnologies} value={valueTechnologies} type="text" id="technologies" name="technologies" minLength="0" maxLength="50"/>
                                 </div>
                             </form>
                         </div>

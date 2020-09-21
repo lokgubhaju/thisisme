@@ -6,17 +6,17 @@ import useLocalStorage from '../scripts/localStorageData';
 function Job() {
     const [valueJobCompany1, setValueJobCompany1] = useLocalStorage(
         'jobCompanyValueStored1'
-      );
+    );
     const valueChangeJobCompany1 = event => setValueJobCompany1(event.target.value);
 
     const [valueJobPosition1, setValueJobPosition1] = useLocalStorage(
         'jobPositionValueStored1'
-      );
+    );
     const valueChangeJobPosition1 = event => setValueJobPosition1(event.target.value);
 
     const [valueJobYears1, setValueJobYears1] = useLocalStorage(
         'jobYearsValueStored1'
-      );
+    );
     const valueChangeJobYears1 = event => setValueJobYears1(event.target.value);
 
     const jobPositionPositionTitle1 = (valueJobCompany1 === '') ? 68 : 106;
@@ -32,17 +32,17 @@ function Job() {
 
     const [valueJobCompany2, setValueJobCompany2] = useLocalStorage(
         'jobCompanyValueStored2'
-      );
+    );
     const valueChangeJobCompany2 = event => setValueJobCompany2(event.target.value);
 
     const [valueJobPosition2, setValueJobPosition2] = useLocalStorage(
         'jobPositionValueStored2'
-      );
+    );
     const valueChangeJobPosition2 = event => setValueJobPosition2(event.target.value);
 
     const [valueJobYears2, setValueJobYears2] = useLocalStorage(
         'jobYearsValueStored2'
-      );
+    );
     const valueChangeJobYears2 = event => setValueJobYears2(event.target.value);
 
     const jobPositionPositionTitle2 = (valueJobCompany2 === '') ? 68 : 106;
@@ -92,15 +92,15 @@ function Job() {
             <p className="currentform-text">current form: 1</p>
             <div>
                 <label htmlFor="companyname1">Company name</label><br/>
-                <input onChange={valueChangeJobCompany1} value={valueJobCompany1} type="text" id="companyname1" name="companyname1" minlength="0" maxlength="30"/>
+                <input onChange={valueChangeJobCompany1} value={valueJobCompany1} type="text" id="companyname1" name="companyname1" minLength="0" maxLength="30"/>
             </div>
             <div>
                 <label htmlFor="position1">Position</label><br/>
-                <input onChange={valueChangeJobPosition1} value={valueJobPosition1} type="text" id="position1" name="position1" minlength="0" maxlength="30"/>
+                <input onChange={valueChangeJobPosition1} value={valueJobPosition1} type="text" id="position1" name="position1" minLength="0" maxLength="30"/>
             </div>
             <div>
                 <label htmlFor="jobyears1">Job years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
-                <input onChange={valueChangeJobYears1} value={valueJobYears1} type="text" id="jobyears1" name="jobyears1" minlength="0" maxlength="15"/>
+                <input onChange={valueChangeJobYears1} value={valueJobYears1} type="text" id="jobyears1" name="jobyears1" minLength="0" maxLength="15"/>
             </div>
         </form>
     );
@@ -110,15 +110,15 @@ function Job() {
             <p className="currentform-text">current form: 2</p>
             <div>
                 <label htmlFor="companyname2">Company name</label><br/>
-                <input onChange={valueChangeJobCompany2} value={valueJobCompany2} type="text" id="companyname2" name="companyname2" minlength="0" maxlength="30"/>
+                <input onChange={valueChangeJobCompany2} value={valueJobCompany2} type="text" id="companyname2" name="companyname2" minLength="0" maxLength="30"/>
             </div>
             <div>
                 <label htmlFor="position2">Position</label><br/>
-                <input onChange={valueChangeJobPosition2} value={valueJobPosition2} type="text" id="position2" name="position2" minlength="0" maxlength="30"/>
+                <input onChange={valueChangeJobPosition2} value={valueJobPosition2} type="text" id="position2" name="position2" minLength="0" maxLength="30"/>
             </div>
             <div>
                 <label htmlFor="jobyears2">Job years <span>(MM/YYYY-MM/YYYY) or (YYYY/YYYY)</span></label><br/>
-                <input onChange={valueChangeJobYears2} value={valueJobYears2} type="text" id="jobyears2" name="jobyears2" minlength="0" maxlength="15"/>
+                <input onChange={valueChangeJobYears2} value={valueJobYears2} type="text" id="jobyears2" name="jobyears2" minLength="0" maxLength="15"/>
             </div>
         </form>
     );

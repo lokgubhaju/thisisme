@@ -6,17 +6,17 @@ import useLocalStorage from '../scripts/localStorageData';
 function Personal() {
     const [valuePersonalFullname, setValuePersonalFullname] = useLocalStorage(
         'personalFullnameValueStored'
-      );
+    );
     const valueChangePersonalFullname = event => setValuePersonalFullname(event.target.value);
 
     const [valuePersonalLanguages, setValuePersonalLanguages] = useLocalStorage(
         'personalLanguagesValueStored'
-      );
+    );
     const valueChangePersonalLanguages = event => setValuePersonalLanguages(event.target.value);
 
     const [valuePersonalHobbies, setValuePersonalHobbies] = useLocalStorage(
         'personalHobbiesValueStored'
-      );
+    );
     const valueChangePersonalHobbies = event => setValuePersonalHobbies(event.target.value);
 
     const personalLanguagesPositionTitle = (valuePersonalFullname === '') ? 36 : 90;
@@ -36,7 +36,7 @@ function Personal() {
             {personalFullnameText}
             {personalLanguagesText}
             {personalHobbiesText}
-         </svg>
+        </svg>
     );
 
     return (
@@ -49,15 +49,15 @@ function Personal() {
                             <form>
                                 <div>
                                     <label htmlFor="fullnameValue">My full name</label><br/>
-                                    <input onChange={valueChangePersonalFullname} value={valuePersonalFullname} type="text" id="fullnameValue" name="fullnameValue" minlength="0" maxlength="40"/>
+                                    <input onChange={valueChangePersonalFullname} value={valuePersonalFullname} type="text" id="fullnameValue" name="fullnameValue" minLength="0" maxLength="40"/>
                                 </div>
                                 <div>
                                     <label htmlFor="languagesValue">Languages I speak <span>(comma separated)</span></label><br/>
-                                    <input onChange={valueChangePersonalLanguages} value={valuePersonalLanguages} type="text" id="languagesValue" name="languagesValue" minlength="0" maxlength="40"/>
+                                    <input onChange={valueChangePersonalLanguages} value={valuePersonalLanguages} type="text" id="languagesValue" name="languagesValue" minLength="0" maxLength="40"/>
                                 </div>
                                 <div>
                                     <label htmlFor="hobbiesValue">My hobbies <span>(comma separated)</span></label><br/>
-                                    <input onChange={valueChangePersonalHobbies} value={valuePersonalHobbies} type="text" id="hobbiesValue" name="hobbiesValue" minlength="0" maxlength="40"/>
+                                    <input onChange={valueChangePersonalHobbies} value={valuePersonalHobbies} type="text" id="hobbiesValue" name="hobbiesValue" minLength="0" maxLength="40"/>
                                 </div>
                             </form>
                         </div>

@@ -7,7 +7,7 @@ import useLocalStorage from '../scripts/localStorageData';
 function Programming() {
     const [valueProgramming, setValueProgramming] = useLocalStorage(
         'programmingValueStored'
-      );
+    );
     const valueChangeProgramming = event => setValueProgramming(event.target.value);
 
     const programmingText = (valueProgramming === '') ? null : <text x="25" y="36"><tspan x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Programming languages I code in</tspan><tspan x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueProgramming}</tspan></text>;
@@ -34,7 +34,7 @@ function Programming() {
                             <form>
                                 <div>
                                     <label htmlFor="programming">Programming languages I code in <span>(comma separated)</span></label><br/>
-                                    <input onChange={valueChangeProgramming} value={valueProgramming} type="text" id="programming" name="programming" minlength="0" maxlength="50"/>
+                                    <input onChange={valueChangeProgramming} value={valueProgramming} type="text" id="programming" name="programming" minLength="0" maxLength="50"/>
                                 </div>
                             </form>
                         </div>

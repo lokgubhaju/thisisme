@@ -6,17 +6,17 @@ import useLocalStorage from '../scripts/localStorageData';
 function Certificates() {
     const [valueCertificatesTitle1, setValueCertificatesTitle1] = useLocalStorage(
         'certificatesTitleValueStored1'
-      );
+    );
     const valueChangeCertificatesTitle1 = event => setValueCertificatesTitle1(event.target.value);
 
     const [valueCertificatesId1, setValueCertificatesId1] = useLocalStorage(
         'certificatesIdValueStored1'
-      );
+    );
     const valueChangeCertificatesId1 = event => setValueCertificatesId1(event.target.value);
 
     const [valueCertificatesDate1, setValueCertificatesDate1] = useLocalStorage(
         'certificatesDateValueStored1'
-      );
+    );
     const valueChangeCertificatesDate1 = event => setValueCertificatesDate1(event.target.value);
 
     const certificatesIdPositionTitle1 = (valueCertificatesTitle1 === '') ? 68 : 106;
@@ -32,17 +32,17 @@ function Certificates() {
 
     const [valueCertificatesTitle2, setValueCertificatesTitle2] = useLocalStorage(
         'certificatesTitleValueStored2'
-      );
+    );
     const valueChangeCertificatesTitle2 = event => setValueCertificatesTitle2(event.target.value);
 
     const [valueCertificatesId2, setValueCertificatesId2] = useLocalStorage(
         'certificatesIdValueStored2'
-      );
+    );
     const valueChangeCertificatesId2 = event => setValueCertificatesId2(event.target.value);
 
     const [valueCertificatesDate2, setValueCertificatesDate2] = useLocalStorage(
         'certificatesDateValueStored2'
-      );
+    );
     const valueChangeCertificatesDate2 = event => setValueCertificatesDate2(event.target.value);
 
     const certificatesIdPositionTitle2 = (valueCertificatesTitle2 === '') ? 68 : 106;
@@ -59,17 +59,17 @@ function Certificates() {
 
     const [valueCertificatesTitle3, setValueCertificatesTitle3] = useLocalStorage(
         'certificatesTitleValueStored3'
-      );
+    );
     const valueChangeCertificatesTitle3 = event => setValueCertificatesTitle3(event.target.value);
 
     const [valueCertificatesId3, setValueCertificatesId3] = useLocalStorage(
         'certificatesIdValueStored3'
-      );
+    );
     const valueChangeCertificatesId3 = event => setValueCertificatesId3(event.target.value);
 
     const [valueCertificatesDate3, setValueCertificatesDate3] = useLocalStorage(
         'certificatesDateValueStored3'
-      );
+    );
     const valueChangeCertificatesDate3 = event => setValueCertificatesDate3(event.target.value);
 
     const certificatesIdPositionTitle3 = (valueCertificatesTitle3 === '') ? 68 : 106;
@@ -118,22 +118,22 @@ function Certificates() {
     );
 
     const [form, setForm] = useState(0);
-    const toggleForm = () => (form == 0) ? setForm(1) : (form == 1) ? setForm(2) : (form == 2) ? setForm(0) : null;
+    const toggleForm = () => (form === 0) ? setForm(1) : (form === 1) ? setForm(2) : (form === 2) ? setForm(0) : null;
 
     const certificatesForm1 = (
         <form>
             <p className="currentform-text">current form: 1</p>
             <div>
                 <label htmlFor="certificatetitle1">Certificate title</label><br/>
-                <input onChange={valueChangeCertificatesTitle1} value={valueCertificatesTitle1} type="text" id="certificatetitle1" name="certificatetitle1" minlength="0" maxlength="40"/>
+                <input onChange={valueChangeCertificatesTitle1} value={valueCertificatesTitle1} type="text" id="certificatetitle1" name="certificatetitle1" minLength="0" maxLength="40"/>
             </div>
             <div>
                 <label htmlFor="certificateid1">Certificate ID</label><br/>
-                <input onChange={valueChangeCertificatesId1} value={valueCertificatesId1} type="text" id="certificateid1" name="certificateid1" minlength="0" maxlength="40"/>
+                <input onChange={valueChangeCertificatesId1} value={valueCertificatesId1} type="text" id="certificateid1" name="certificateid1" minLength="0" maxLength="40"/>
             </div>
             <div>
                 <label htmlFor="certificatereceiveddate1">Certificate received date <span>(MM/YYYY)</span></label><br/>
-                <input onChange={valueChangeCertificatesDate1} value={valueCertificatesDate1} type="text" id="certificatereceiveddate1" name="certificatereceiveddate1" minlength="0" maxlength="7"/>
+                <input onChange={valueChangeCertificatesDate1} value={valueCertificatesDate1} type="text" id="certificatereceiveddate1" name="certificatereceiveddate1" minLength="0" maxLength="7"/>
             </div>
         </form>
     );
@@ -143,15 +143,15 @@ function Certificates() {
             <p className="currentform-text">current form: 2</p>
             <div>
                 <label htmlFor="certificatetitle2">Certificate title</label><br/>
-                <input onChange={valueChangeCertificatesTitle2} value={valueCertificatesTitle2} type="text" id="certificatetitle2" name="certificatetitle2" minlength="0" maxlength="40"/>
+                <input onChange={valueChangeCertificatesTitle2} value={valueCertificatesTitle2} type="text" id="certificatetitle2" name="certificatetitle2" minLength="0" maxLength="40"/>
             </div>
             <div>
                 <label htmlFor="certificateid2">Certificate ID</label><br/>
-                <input onChange={valueChangeCertificatesId2} value={valueCertificatesId2} type="text" id="certificateid2" name="certificateid2" minlength="0" maxlength="40"/>
+                <input onChange={valueChangeCertificatesId2} value={valueCertificatesId2} type="text" id="certificateid2" name="certificateid2" minLength="0" maxLength="40"/>
             </div>
             <div>
                 <label htmlFor="certificatereceiveddate2">Certificate received date <span>(MM/YYYY)</span></label><br/>
-                <input onChange={valueChangeCertificatesDate2} value={valueCertificatesDate2} type="text" id="certificatereceiveddate2" name="certificatereceiveddate2" minlength="0" maxlength="7"/>
+                <input onChange={valueChangeCertificatesDate2} value={valueCertificatesDate2} type="text" id="certificatereceiveddate2" name="certificatereceiveddate2" minLength="0" maxLength="7"/>
             </div>
         </form>
     );
@@ -161,15 +161,15 @@ function Certificates() {
             <p className="currentform-text">current form: 3</p>
             <div>
                 <label htmlFor="certificatetitle3">Certificate title</label><br/>
-                <input onChange={valueChangeCertificatesTitle3} value={valueCertificatesTitle3} type="text" id="certificatetitle3" name="certificatetitle3" minlength="0" maxlength="40"/>
+                <input onChange={valueChangeCertificatesTitle3} value={valueCertificatesTitle3} type="text" id="certificatetitle3" name="certificatetitle3" minLength="0" maxLength="40"/>
             </div>
             <div>
                 <label htmlFor="certificateid3">Certificate ID</label><br/>
-                <input onChange={valueChangeCertificatesId3} value={valueCertificatesId3} type="text" id="certificateid3" name="certificateid3" minlength="0" maxlength="40"/>
+                <input onChange={valueChangeCertificatesId3} value={valueCertificatesId3} type="text" id="certificateid3" name="certificateid3" minLength="0" maxLength="40"/>
             </div>
             <div>
                 <label htmlFor="certificatereceiveddate3">Certificate received date <span>(MM/YYYY)</span></label><br/>
-                <input onChange={valueChangeCertificatesDate3} value={valueCertificatesDate3} type="text" id="certificatereceiveddate3" name="certificatereceiveddate3" minlength="0" maxlength="7"/>
+                <input onChange={valueChangeCertificatesDate3} value={valueCertificatesDate3} type="text" id="certificatereceiveddate3" name="certificatereceiveddate3" minLength="0" maxLength="7"/>
             </div>
         </form>
     );
@@ -181,7 +181,7 @@ function Certificates() {
                 <div>
                     <section id="section">
                         <div id="form-wrapper">
-                            {(form == 0) ? certificatesForm1 : (form == 1) ? certificatesForm2 : (form == 2) ? certificatesForm3 : null}
+                            {(form === 0) ? certificatesForm1 : (form === 1) ? certificatesForm2 : (form === 2) ? certificatesForm3 : null}
                             <button id="toggle-button" onClick={toggleForm}>Toggle form</button>
                             <input id="more-button" type="checkbox" onChange={() => setChecked(!checked)}></input>
                             <p>each form corresponds to each inner card.</p>
