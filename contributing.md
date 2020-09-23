@@ -32,6 +32,7 @@ You don't know how to start? Read this quick guide to learn how:
     <li>Go to the <a href="https://github.com/JoseDeFreitas/thisisme/pulls">thisisme repository Pull requests section</a> and click on the "New pull request" button. After that, click on "compare across folks", select the fork you've created and the branch you've created in the fork using the third (repository) and the fourth (branch) inputs (the ones that are on the right-hand side of the arrow ("<-") icon). Then, click on "Create pull request".<br/><img src="./assets/guide/pr-guide-image_4.png"/><br/><img src="./assets/guide/pr-guide-image_5.png"/></li>
     <li>Select a Pull request title that corresponds to the content of the pull request.</li>
     <li>Make a detailed explanation of the changes you've made. You can make use of the markdown system to make it look great.</li>
+    <li>It's recommended that you keep the "Allow edits from maintainers" (or, it may also be "Allow edits and access to secrets by maintainers") checkbox <strong>checked</strong>. This way, users with write access can make changes and commit to your pull request, if needed. <em>You can change this option anytime after you've created the pull request though</em>.</li>
     <li>When ready, click on the "Create pull request" button and... you've finished! <em>The pull request needs to pass the Vercel check. You don't need to do anything, just close the page and it will automatically function</em>.<br/><img src="./assets/guide/pr-guide-image_6.png"/></li>
   </ol>
 </details>
