@@ -208,7 +208,7 @@
     padding: .6rem;
 }
 
-#section #form-wrapper #toggle-button {
+#section #form-wrapper #toggle-button, #result button {
     margin-top: 1rem;
     padding: .6rem 1rem;
     background-color: hsl(219, 86%, 57%);
@@ -218,7 +218,7 @@
     border: none;
     cursor: pointer;
 }
-#section #form-wrapper #toggle-button:hover {
+#section #form-wrapper #toggle-button:hover, #result button:hover {
     background-color: hsl(219, 86%, 63%);
 }
 
