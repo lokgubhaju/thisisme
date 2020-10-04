@@ -10,8 +10,6 @@ function Technologies() {
     );
     const valueChangeTechnologies = event => setValueTechnologies(event.target.value);
 
-    const technologiesValue = (valueTechnologies === '') ? null : <text x="25" y="36"><tspan x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Technologies I use</tspan><tspan x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueTechnologies}</tspan></text>;
-
     const imgHeight = (valueTechnologies === '') ? 26 : 82;
 
     /*const location = useLocation();
@@ -21,7 +19,12 @@ function Technologies() {
     const svgImageTechnologies = (
         <g>
             <rect x="0.5" y="0.5" width="494" height={imgHeight - 1} rx="4.5" fill="#FFFEFE" stroke="#E4E2E2"/>
-            {technologiesValue}
+            {valueTechnologies !== '' && (
+                <text x="25" y="36">
+                    <tspan x="25" y="36" fill="#2F80ED" fontFamily="Segoe UI" fontWeight="600" fontSize="18px">Technologies I use</tspan>
+                    <tspan x="25" y="60" fill="#333" fontFamily="Segoe UI" fontWeight="400" fontSize="14px">{valueTechnologies}</tspan>
+                </text>
+            )}
         </g>
     );
 
