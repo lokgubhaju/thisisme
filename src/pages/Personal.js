@@ -64,7 +64,7 @@ function Personal() {
                     </section>
                     <aside id="section-aside">
                         <h1>Notes:</h1>
-                        <p><span>*</span> all inputs are optional.<br/><span>*</span> comma separated example: English, French, ...<br/><span>*</span> for information about data, see <Link to="/privacy-policy" exact>Privacy Policy</Link>.</p>
+                        <p><span>*</span> all inputs are optional.<br/><span>*</span> comma separated example: English, French, ...<br/><span>*</span> for information about data, see <Link to="/privacy-policy">Privacy Policy</Link>.</p>
                     </aside>
                 </div>
                 <div id="svg-wrapper">

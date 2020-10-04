@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, /* useLocation */ } from 'react-router-dom';
 import { renderToString } from 'react-dom/server';
 import Navigation from '../components/Navigation';
 import useLocalStorage from '../scripts/localStorageData';
@@ -45,14 +45,14 @@ function Technologies() {
                     </section>
                     <aside id="section-aside">
                         <h1>Notes:</h1>
-                        <p><span>*</span> all inputs are optional.<br/><span>*</span> comma separated example: Visual Studio Code, React, ...<br/><span>*</span> for information about data, see <Link to="/privacy-policy" exact>Privacy Policy</Link>.</p>
+                        <p><span>*</span> all inputs are optional.<br/><span>*</span> comma separated example: Visual Studio Code, React, ...<br/><span>*</span> for information about data, see <Link to="/privacy-policy">Privacy Policy</Link>.</p>
                     </aside>
                 </div>
                 <div>
                     <svg width="495" height={imgHeight} viewBox={`0 0 495 ${imgHeight}`} fill="none" xmlns="http://www.w3.org/2000/svg">
                         {svgImageTechnologies}
                     </svg>
-                    <p id="preview-text">preview <span>- you can edit the layout in the <Link to="/s/result" exact>Result</Link> section.</span></p>
+                    <p id="preview-text">preview <span>- you can edit the layout in the <Link to="/s/result">Result</Link> section.</span></p>
                 </div>
             </div>
         </>
