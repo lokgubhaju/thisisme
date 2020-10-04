@@ -13,10 +13,14 @@ function Result() {
     return (
         <>
             <Navigation/>
-            <svg width="900" height="192" viewBox="0 0 900 192" fill="none" xmlns="http://www.w3.org/2000/svg">
-                {parse(svgImageProgrammingPassedClean)}
-                {parse(svgImageTechnologiesPassedClean)}
-            </svg>
+            <div id="section-wrapper">
+                <div id="result">
+                    <svg width="900" height="192" viewBox="0 0 900 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        {parse(svgImageProgrammingPassedClean)}
+                        {parse(svgImageTechnologiesPassedClean)}
+                    </svg>
+                </div>
+            </div>
         </>
     );
 }

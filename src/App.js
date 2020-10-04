@@ -13,23 +13,19 @@ import Privacy from './pages/Privacy';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <>
-          <Switch>
-            <Route exact path="/" component={ Home }/>
-            <Route exact path="/s/programming" component={ Programming }/>
-            <Route exact path="/s/technologies" component={ Technologies }/>
-            <Route exact path="/s/education" component={ Education }/>
-            <Route exact path="/s/job" component={ Job }/>
-            <Route exact path="/s/personal" component={ Personal }/>
-            <Route exact path="/s/certificates" component={ Certificates }/>
-            <Route exact path="/s/result" component={ Result }/>
-            <Route exact path="/privacy-policy" component={ Privacy }/>
-          </Switch>
-        </>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={ Home }/>
+          <Route exact path="/s/programming" component={ Programming }/>
+          <Route exact path="/s/technologies" component={ Technologies }/>
+          <Route exact path="/s/education" component={ Education }/>
+          <Route exact path="/s/job" component={ Job }/>
+          <Route exact path="/s/personal" component={ Personal }/>
+          <Route exact path="/s/certificates" component={ Certificates }/>
+          <Route exact path="/s/result" component={ Result }/>
+          <Route exact path="/privacy-policy" component={ Privacy }/>
+        </Switch>
+    </BrowserRouter>
   );
 }
 
