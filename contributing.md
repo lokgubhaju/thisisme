@@ -1,4 +1,6 @@
-# Contributing
+# Contributing**R
+
+**Ready for the Hacktoberfest 2020! See the [Issues](https://github.com/JoseDeFreitas/thisisme/issues)**
 
 ## Code of conduct
 
