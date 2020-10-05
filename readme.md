@@ -35,10 +35,17 @@ Currently, the app is not deployed from the last commit. So the app may not crea
 
 ## 💻 Install Locally
 
+First clone this repository:
+```sh
+git clone https://github.com/JoseDeFreitas/thisisme.git
+cd thisisme
+```
+Install dependencies:
+
 ```sh
 npm install
 ```
-This will install all dependencies. Start the project locally to see it in action.
+Start the project locally to see it in action.
 
 ```sh
 npm run start
